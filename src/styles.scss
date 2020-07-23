@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import './styles.colors';
+@import './styles.variables';
+@import '~materialize-css/sass/materialize';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import url('https://unpkg.com/nes.css@2.2.0/css/nes.min.css');
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: $text-color;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.top-section {
+  position: relative;
+  z-index: 997;
+}
+
+.parallax-container {
+  position: relative;
+  height: calc(100vh - 56px);
+  min-height: $parallax-min-height;
+  background-color: rgba($primary-color-dark, 0.5);
+
+  @media #{$medium-and-up} {
+    height: 100vh;
+  }
+
+  &-data {
+    width: 100%;
+    object-fit: contain;
+  }
+}
