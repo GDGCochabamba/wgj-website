@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "wgj-website"
+    }
+  },
+  "defaultProject": "wgj-website",
+  "cli": {
+    "analytics": false
+  }
 }
