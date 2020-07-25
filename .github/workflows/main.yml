@@ -31,7 +31,7 @@ jobs:
         run: npm run lint
         # Runs a set of commands to check testing
       - name: Run basic tests
-        run: echo "los test pasaron creeme a mi :) ok no hay que configurar los test para que corra en CD/CI PhantomJS o ChromeHeadless"
+        run: npm run test-ci
       # Runs a set of commands to build
       - name: Build
         run: npm run build --prod
