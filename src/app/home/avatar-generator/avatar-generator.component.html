@@ -1,0 +1,23 @@
+<div class="center-align container">
+  <div class="my-2">
+    <h4 class="title pixel-text">Crea tu propio avatar</h4>
+  </div>
+  <div class="row">
+    <div class="col s12 m6">
+      <div #screen class="bg-image center">
+        <img class="logo" src="assets/images/logo.svg" alt="cielo de noche">
+        <div [innerHTML]="buildAvatarSvg() | safeHtml"></div>
+      </div>
+      <button (click)="downloadImage()" type="button" class="nes-btn is-primary pixel-text my-2">Descargar avatar</button>
+    </div>
+    <div class="col s12 m6">
+      <div *ngFor="let key of avatarKeys" class="col s6 m4">
+        <wgj-atribute-selector [dialogId]="key" [avatar]="avatar" [decorator]="avatar[key]"></wgj-atribute-selector>
+      </div>
+    </div>
+  </div>
+  <div id="download">
+    <img #canvas>
+    <a #downloadLink>Descarga</a>
+  </div>
+</div>
