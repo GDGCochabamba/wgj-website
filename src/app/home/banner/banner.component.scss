@@ -1,0 +1,27 @@
+@import '../../../styles.colors';
+@import '../../../styles.variables';
+
+#banner-container {
+  object-fit: contain;
+}
+
+#wgj-logo {
+  max-width: 30%;
+  margin-bottom: 70px;
+}
+
+#character {
+  max-width: 30%;
+}
+
+.button-signup {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: transparent;
+  border-color: transparent;
+}
+
+.invitation-text {
+  font-size: 18px;
+  color: $secondary-color;
+}

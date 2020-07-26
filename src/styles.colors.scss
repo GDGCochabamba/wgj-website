@@ -1,0 +1,25 @@
+@import '~materialize-css/sass/components/color-variables';
+
+$primary-color: #250E59 !default;
+$primary-color-light: false !default;
+$primary-color-dark: false !default;
+
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
+
+$secondary-color: #ffffff !default;
+
+$navbar-color: white !default;
+$text-color: #3d3d3d !default;
+$border-color: #9d9d9d !default;
+$divider-color: #969696 !default;
+$red-text-color: #ff7976;
+
+$success-color: color('green', 'base') !default;
+$error-color: color('red', 'base') !default;
+$link-color: color('light-blue', 'darken-1') !default;
