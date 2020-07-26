@@ -1,0 +1,24 @@
+@import '../../../../styles.variables.scss';
+
+.box {
+  margin-left: 50px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.black-text {
+  color: $primary-color;
+}
+
+.pixel-title {
+  font-size: 1.7rem;
+  font-family: "Press Start 2P";
+}
+
+.selectedItem {
+  background-color: $secondary-color;
+}
