@@ -2,6 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
+import { InvitationComponent } from './invitation/invitation.component';
+import { SocialNetworksComponent } from './social-networks/social-networks.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -11,7 +13,9 @@ describe('HomeComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         HomeComponent,
-        BannerComponent
+        BannerComponent,
+        InvitationComponent,
+        SocialNetworksComponent
       ],
     }).compileComponents();
   }));
