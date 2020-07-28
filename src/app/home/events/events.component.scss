@@ -1,0 +1,30 @@
+@import '../../../styles.variables';
+
+.events-container {
+  background-image: url('/assets/images/events-sm-bg.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left 50vw top 0;
+
+  @media #{$medium-and-up} {
+    background-image: url('/assets/images/events-bg.png');
+  }
+
+  .events-content {
+    @media #{$medium-and-up} {
+      width: 40%;
+    }
+
+    .event-reminder {
+      margin-top: 20px;
+      border-image-repeat: stretch !important;
+    }
+
+    .event-date {
+      background-color: $secondary-color;
+      font-weight: bold;
+      height: 40px;
+      margin: 0 8px;
+    }
+  }
+}

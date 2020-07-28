@@ -1,33 +1,4 @@
-@import '../../../styles.colors';
-@import '../../../styles.variables';
-
-.invitation-container {
-  object-fit: contain;
-  padding-top: 100px;
-  padding-bottom: 40px;
-}
-
-.title {
-  color: $primary-color;
-  font-size: 34px;
-  font-weight: bold;
-  font-family: 'Open Sans', serif;
-}
-
-.description {
-  font-size: 18px;
-}
-
-.section {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 .text-section {
-  font-size: 20px;
+  font-size: 1.4285rem;
   width: 80%;
-}
-
-#text-invitation {
-
 }

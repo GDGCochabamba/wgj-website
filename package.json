@@ -20,7 +20,6 @@
     "@angular/platform-browser": "~10.0.4",
     "@angular/platform-browser-dynamic": "~10.0.4",
     "@angular/router": "~10.0.4",
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "materialize-css": "^1.0.0",
     "nes.css": "2.2.0",
     "rxjs": "~6.5.5",
