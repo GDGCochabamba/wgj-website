@@ -94,6 +94,14 @@
         "named": "never"
       }
     },
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never",
+        "esSpecCompliant": true
+      }
+    ],
     "typedef": [
       true,
       "call-signature"
