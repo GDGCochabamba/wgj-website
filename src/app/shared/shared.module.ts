@@ -7,9 +7,12 @@ import { TransparentNavbarDirective } from './directives/transparent-navbar/tran
 @NgModule({
   declarations: [
     ParallaxDirective,
-    TransparentNavbarDirective
+    TransparentNavbarDirective,
   ],
   imports: [CommonModule],
-  exports: [ParallaxDirective, TransparentNavbarDirective]
+  exports: [
+    ParallaxDirective,
+    TransparentNavbarDirective,
+  ],
 })
-export class SharedModule {}
+export class SharedModule { }

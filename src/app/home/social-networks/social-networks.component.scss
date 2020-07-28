@@ -1,7 +1,11 @@
-@import '../../../styles.colors';
+.social-networks {
+  height: 300px;
 
-.follow-us {
-  margin-top: 20px;
-  color: $primary-color;
-  font-family: 'Open Sans', serif;
+  .title {
+    font-size: 2rem;
+  }
+
+  .nes-btn img {
+    height: 2rem;
+  }
 }
