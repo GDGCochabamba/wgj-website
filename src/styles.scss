@@ -1,3 +1,4 @@
+@import './styles.addevent';
 @import './styles.variables';
 @import '~materialize-css/sass/materialize';
 @import '~nes.css/css/nes.min';
@@ -35,8 +36,16 @@ a {
   width: 100%;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .mx-1 {
   margin: 0 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
 }
 
 .my-2 {
@@ -45,6 +54,10 @@ a {
 
 .mt-3 {
   margin-top: 3rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
 }
 
 .py-6 {
