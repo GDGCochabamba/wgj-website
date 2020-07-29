@@ -12,6 +12,34 @@
 
 <body>
   <wgj-root></wgj-root>
+
+  <!-- AddEvent script -->
+  <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+  <!-- AddEvent settings -->
+  <script type="text/javascript">
+    window.addeventasync = () => {
+      addeventatc.settings({
+        facebook: {
+          show: true,
+          text: 'Facebook',
+        },
+        google: {
+          show: true,
+          text: 'Google',
+        },
+        appleical: {
+          show: true,
+          text: 'Apple Calendar',
+        },
+        dropdown: {
+          order: 'facebook,google,appleical'
+        },
+        css: false,
+      });
+    };
+
+  </script>
 </body>
 
 </html>
