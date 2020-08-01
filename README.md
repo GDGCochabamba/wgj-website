@@ -13,7 +13,15 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/wgj-website` directory. Use the `--prod` flag for a production build.
+
+### Building as a pre-rendered site
+
+Run `scully` to build the project as a pre-rendered site, the static build artifacts will be stored in the `dist/static` directory. Scully requires that the project was already built and that distribution files were generated, so `ng build` has to run before.
+
+Running `npm run build:prod` automatically runs _ng build_ and _scully_ in production mode.
+
+_Note: The current Firebase configuration expects that the build artifacts are stored in the `dist/static` directory._
 
 ## Running unit tests
 

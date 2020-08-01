@@ -47,3 +47,7 @@ Thumbs.db
 
 # Firebase
 .firebase/*
+firebase-debug.log
+
+# Scully
+scully.log
