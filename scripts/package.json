@@ -1,0 +1,11 @@
+{
+  "name": "clean-registers",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node clean-results.js"
+  },
+  "dependencies": {
+    "exceljs": "^3.7.0"
+  }
+}
