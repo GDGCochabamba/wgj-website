@@ -6,7 +6,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { InvitationComponent } from './invitation/invitation.component';
+import { OurGoalComponent } from './our-goal/our-goal.component';
 import { EventsComponent } from './events/events.component';
 import { SocialNetworksComponent } from './social-networks/social-networks.component';
 import { SharedModule } from '../shared/shared.module';
@@ -18,7 +18,7 @@ import { SafeHtmlPipe } from '../shared/safe-html.pipe.ts';
     HomeComponent,
     BannerComponent,
     AboutUsComponent,
-    InvitationComponent,
+    OurGoalComponent,
     EventsComponent,
     SocialNetworksComponent,
     AvatarGeneratorComponent,
