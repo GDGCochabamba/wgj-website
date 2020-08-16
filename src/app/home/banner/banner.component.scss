@@ -1,26 +1,39 @@
-#wgj-logo {
-  max-width: 30%;
-  margin-bottom: 70px;
+@import '../../../styles.variables';
+
+.logo {
+  max-width: 250px;
 }
 
-#character {
-  max-width: 30%;
+.characters {
+  max-width: 250px;
 }
 
 .parallax-container {
   position: relative;
   height: 100vh;
-  min-height: 700px;
+  min-height: 750px;
   max-height: 1024px;
 }
 
 .button-signup {
-  margin-top: 10px;
-  margin-bottom: 50px;
   color: transparent;
   border-color: transparent;
 }
 
 .invitation-text {
   font-size: 18px;
+  font-weight: bold;
+}
+
+.event-date {
+  color: $call-to-action-color;
+}
+
+.organizers {
+  position: absolute;
+  bottom: 0;
+
+  .organizers-image {
+    max-width: 100%;
+  }
 }
