@@ -2,7 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
-import { InvitationComponent } from './invitation/invitation.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { OurGoalComponent } from './our-goal/our-goal.component';
 import { EventsComponent } from './events/events.component';
 import { SocialNetworksComponent } from './social-networks/social-networks.component';
 
@@ -15,7 +16,8 @@ describe('HomeComponent', () => {
       declarations: [
         HomeComponent,
         BannerComponent,
-        InvitationComponent,
+        AboutUsComponent,
+        OurGoalComponent,
         EventsComponent,
         SocialNetworksComponent,
       ],
