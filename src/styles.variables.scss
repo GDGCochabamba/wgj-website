@@ -20,4 +20,13 @@ $success-color: color('green', 'base') !default;
 $error-color: color('red', 'base') !default;
 $link-color: color('light-blue', 'darken-1') !default;
 
+// Previous events
+$event-border-size: 5px;
+$first-meetup-color: rgb(86, 86, 175);
+$first-meetup-secondary-color: rgb(64, 64, 175);
+$second-meetup-color: rgb(234, 88, 156);
+$second-meetup-secondary-color: rgb(190, 68, 125);
+$third-meetup-color: rgb(69, 177, 185);
+$third-meetup-secondary-color: rgb(32, 113, 119);
+
 @import '~materialize-css/sass/components/variables';

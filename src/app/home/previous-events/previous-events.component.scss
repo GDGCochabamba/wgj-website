@@ -1,29 +1,117 @@
 @import '../../../styles.variables';
 
-.events-container {
-  background-image: url('/assets/images/events-sm-bg.png');
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: left 50vw top 0;
+.event {
+  position: relative;
+}
 
-  @media #{$medium-and-up} {
-    background-image: url('/assets/images/events-bg.png');
+.event-border {
+  position: absolute;
+  border-width: calc(#{$event-border-size} / 2);
+  border-style: solid;
+  border-color: black;
+
+  &.first-meetup {
+    border-color: $first-meetup-secondary-color;
   }
 
-  .events-content {
-    @media #{$medium-and-up} {
-      width: 40%;
+  &.second-meetup {
+    border-color: $second-meetup-secondary-color;
+  }
+
+  &.third-meetup {
+    border-color: $third-meetup-secondary-color;
+  }
+
+  &.event-border-top {
+    left: $event-border-size;
+    right: calc(#{$event-border-size} * 2);
+    width: calc(100% - calc(#{$event-border-size} * 2));
+
+    &.first-meetup {
+      border-color: $first-meetup-color;
     }
 
-    .event-reminder {
-      margin-top: 20px;
-      border-image-repeat: stretch !important;
+    &.second-meetup {
+      border-color: $second-meetup-color;
     }
 
-    .event-details {
-      background-color: $secondary-color;
-      font-weight: bold;
-      margin: 0 8px;
+    &.third-meetup {
+      border-color: $third-meetup-color;
+    }
+  }
+
+  &.event-border-left {
+    top: $event-border-size;
+    bottom: $event-border-size;
+  }
+
+  &.event-border-bottom {
+    left: $event-border-size;
+    right: calc(#{$event-border-size});
+    bottom: 0;
+    width: calc(100% - calc(#{$event-border-size} * 2));
+  }
+
+  &.event-border-right {
+    top: $event-border-size;
+    right: 0;
+    bottom: $event-border-size;
+  }
+}
+
+.event-details {
+  font-weight: bold;
+  margin: 0 5px;
+
+  &.first-meetup {
+    background-color: $first-meetup-color;
+  }
+
+  &.second-meetup {
+    background-color: $second-meetup-color;
+  }
+
+  &.third-meetup {
+    background-color: $third-meetup-color;
+  }
+}
+
+.nes-btn {
+  color: white;
+
+  &.first-meetup {
+    background-color: $first-meetup-color;
+
+    &::after{
+      box-shadow: inset -4px -4px $first-meetup-secondary-color;
+    }
+
+    &:hover::after{
+      box-shadow: inset -6px -6px $first-meetup-secondary-color;
+    }
+  }
+
+  &.second-meetup {
+    background-color: $second-meetup-color;
+
+    &::after{
+      box-shadow: inset -4px -4px $second-meetup-secondary-color;
+    }
+
+    &:hover::after{
+      box-shadow: inset -6px -6px $second-meetup-secondary-color;
+    }
+  }
+
+  &.third-meetup {
+    background-color: $third-meetup-color;
+
+    &::after{
+      box-shadow: inset -4px -4px $third-meetup-secondary-color;
+    }
+
+    &:hover::after{
+      box-shadow: inset -6px -6px $third-meetup-secondary-color;
     }
   }
 }
