@@ -4,7 +4,7 @@ import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { OurGoalComponent } from './our-goal/our-goal.component';
-import { EventsComponent } from './events/events.component';
+import { PreviousEventsComponent } from './previous-events/previous-events.component';
 import { SocialNetworksComponent } from './social-networks/social-networks.component';
 
 describe('HomeComponent', () => {
@@ -18,7 +18,7 @@ describe('HomeComponent', () => {
         BannerComponent,
         AboutUsComponent,
         OurGoalComponent,
-        EventsComponent,
+        PreviousEventsComponent,
         SocialNetworksComponent,
       ],
     }).compileComponents();
