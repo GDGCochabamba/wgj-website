@@ -1,8 +1,12 @@
 // Generic styles
+
+
+// Width
 .w-100 {
   width: 100%;
 }
 
+// Margin
 .m-0 {
   margin: 0;
 }
@@ -23,6 +27,10 @@
   margin-top: 1rem;
 }
 
+.mt-2 {
+  margin-top: 2rem;
+}
+
 .mt-3 {
   margin-top: 3rem;
 }
@@ -33,6 +41,16 @@
 
 .ml-1 {
   margin-left: 1rem;
+}
+
+
+// Padding
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-1 {
+  padding: 1rem;
 }
 
 .px-2 {
