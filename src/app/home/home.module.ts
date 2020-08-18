@@ -9,11 +9,12 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { CommunitiesComponent } from './communities/communities.component';
 import { OurGoalComponent } from './our-goal/our-goal.component';
 import { PreviousEventsComponent } from './previous-events/previous-events.component';
-import { SocialNetworksComponent } from './social-networks/social-networks.component';
-import { SharedModule } from '../shared/shared.module';
+import { GlobalCommunityComponent } from './global-community/global-community.component';
 import { AvatarGeneratorComponent } from './avatar-generator/avatar-generator.component';
 import { AtributeSelectorComponent } from './avatar-generator/selector/atribute-selector.component';
-import { SafeHtmlPipe } from '../shared/safe-html.pipe.ts';
+import { SocialNetworksComponent } from './social-networks/social-networks.component';
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -25,7 +26,7 @@ import { SafeHtmlPipe } from '../shared/safe-html.pipe.ts';
     SocialNetworksComponent,
     AvatarGeneratorComponent,
     AtributeSelectorComponent,
-    SafeHtmlPipe,
+    GlobalCommunityComponent,
   ],
   imports: [
     CommonModule,
