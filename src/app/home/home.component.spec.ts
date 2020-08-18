@@ -6,6 +6,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { CommunitiesComponent } from './communities/communities.component';
 import { OurGoalComponent } from './our-goal/our-goal.component';
 import { PreviousEventsComponent } from './previous-events/previous-events.component';
+import { GlobalCommunityComponent } from './global-community/global-community.component';
 import { SocialNetworksComponent } from './social-networks/social-networks.component';
 
 describe('HomeComponent', () => {
@@ -21,6 +22,7 @@ describe('HomeComponent', () => {
         CommunitiesComponent,
         OurGoalComponent,
         PreviousEventsComponent,
+        GlobalCommunityComponent,
         SocialNetworksComponent,
       ],
     }).compileComponents();
