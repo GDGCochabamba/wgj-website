@@ -8,9 +8,9 @@ describe('GlobalCommunityComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GlobalCommunityComponent ]
+      declarations: [GlobalCommunityComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
