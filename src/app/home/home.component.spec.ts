@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
@@ -7,7 +8,10 @@ import { CommunitiesComponent } from './communities/communities.component';
 import { OurGoalComponent } from './our-goal/our-goal.component';
 import { PreviousEventsComponent } from './previous-events/previous-events.component';
 import { GlobalCommunityComponent } from './global-community/global-community.component';
+import { AvatarGeneratorComponent } from './avatar-generator/avatar-generator.component';
+import { AttributeSelectorComponent } from './avatar-generator/attribute-selector/attribute-selector.component';
 import { SocialNetworksComponent } from './social-networks/social-networks.component';
+import { SharedModule } from '../shared/shared.module';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -23,8 +27,11 @@ describe('HomeComponent', () => {
         OurGoalComponent,
         PreviousEventsComponent,
         GlobalCommunityComponent,
+        AvatarGeneratorComponent,
+        AttributeSelectorComponent,
         SocialNetworksComponent,
       ],
+      imports: [FormsModule, SharedModule],
     }).compileComponents();
   }));
 
