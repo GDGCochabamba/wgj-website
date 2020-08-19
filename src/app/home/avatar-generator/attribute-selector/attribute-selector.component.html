@@ -6,7 +6,7 @@
 
 <div #decoratorModal=modalDirective wgjModal class="modal nes-dialog is-rounded">
   <ng-container *ngIf="decorator">
-    <button type="button" class="nes-btn is-error close-btn pixel-text white-text" (click)="decoratorModal.close()">
+    <button type="button" class="nes-btn is-error close-btn white-text" (click)="decoratorModal.close()">
       X
     </button>
     <form method="dialog">
@@ -16,7 +16,7 @@
           <div [innerHTML]="getAvatar() | safeHtml"></div>
         </div>
         <div class="col s12 m6">
-          <label class="description-text black-text pixel-text" for="favcolor">
+          <label class="description-text black-text" for="favcolor">
             Puedes cambiar el color 🎨 aquí:
           </label>
           <input type="color" name="favcolor" [(ngModel)]="color">
