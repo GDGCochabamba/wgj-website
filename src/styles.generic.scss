@@ -3,7 +3,11 @@
 
 // Width
 .w-100 {
-  width: 100%;
+  width: 100% !important;
+}
+
+.max-w-100 {
+  max-width: 100% !important;
 }
 
 // Margin
@@ -48,6 +52,10 @@
 
 .mt-3 {
   margin-top: 3rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 2rem !important;
 }
 
 .mb-2 {
