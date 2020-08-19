@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AvatarGeneratorComponent } from './avatar-generator.component';
-import { SafeHtmlPipe } from '../../shared/pipes/safe-html/safe-html.pipe';
+import { SharedModule } from '../../shared/shared.module';
 
 describe('AvatarGeneratorComponent', () => {
   let component: AvatarGeneratorComponent;
@@ -9,7 +9,8 @@ describe('AvatarGeneratorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AvatarGeneratorComponent, SafeHtmlPipe],
+      declarations: [AvatarGeneratorComponent],
+      imports: [SharedModule],
     })
       .compileComponents();
   }));
