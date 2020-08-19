@@ -115,8 +115,8 @@ export function getMouth(type: string, color: string): string {
       mouth = `<path xmlns="http://www.w3.org/2000/svg" d="M9 12h2v1H9v-1z" fill=${color} />`;
       break;
     case 'small':
-    mouth = `<path xmlns="http://www.w3.org/2000/svg" d="M9 12v1h1v-1H9z" fill=${color} />`;
-    break;
+      mouth = `<path xmlns="http://www.w3.org/2000/svg" d="M9 12v1h1v-1H9z" fill=${color} />`;
+      break;
     case 'happyLeft':
       mouth = `<path xmlns="http://www.w3.org/2000/svg" d="M8 11v1h1v1h2v-1H9v-1H8z" fill=${color} />`;
       break;

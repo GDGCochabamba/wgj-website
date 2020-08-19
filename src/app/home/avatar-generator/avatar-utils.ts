@@ -1,4 +1,4 @@
-import {AvatarOptions, KeyAvatar} from './avatar-types';
+import { AvatarOptions, KeyAvatar } from './avatar-types';
 import { getPreview } from './avatar-selector-path';
 
 export const avatarOptions: AvatarOptions = {
@@ -6,7 +6,7 @@ export const avatarOptions: AvatarOptions = {
     color: '#EAC393',
     currentValue: 'woman-brunet',
     options: ['woman-brunette', 'woman-afro-american', 'woman-brunet', 'woman-white',
-    'men-afro-american', 'men-brunette', 'men-brunet', 'men-white'],
+      'men-afro-american', 'men-brunette', 'men-brunet', 'men-white'],
     name: 'rostro',
     type: 'body',
   },
@@ -14,7 +14,7 @@ export const avatarOptions: AvatarOptions = {
     color: '#232626',
     currentValue: 'medium',
     options: ['long', 'short1', 'short2', 'short3', 'simpleBraid', 'doubleBraid', 'braid', 'medium', 'disaster',
-    'men-short1', 'men-short2', 'men-short3', 'men-very-short', 'men-entry', 'men-disorder', 'none'],
+      'men-short1', 'men-short2', 'men-short3', 'men-very-short', 'men-entry', 'men-disorder', 'none'],
     name: 'cabello',
     type: 'hair',
   },
