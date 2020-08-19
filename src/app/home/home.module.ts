@@ -11,7 +11,7 @@ import { OurGoalComponent } from './our-goal/our-goal.component';
 import { PreviousEventsComponent } from './previous-events/previous-events.component';
 import { GlobalCommunityComponent } from './global-community/global-community.component';
 import { AvatarGeneratorComponent } from './avatar-generator/avatar-generator.component';
-import { AtributeSelectorComponent } from './avatar-generator/selector/atribute-selector.component';
+import { AttributeSelectorComponent } from './avatar-generator/attribute-selector/attribute-selector.component';
 import { SocialNetworksComponent } from './social-networks/social-networks.component';
 import { SharedModule } from '../shared/shared.module';
 
@@ -25,7 +25,7 @@ import { SharedModule } from '../shared/shared.module';
     PreviousEventsComponent,
     SocialNetworksComponent,
     AvatarGeneratorComponent,
-    AtributeSelectorComponent,
+    AttributeSelectorComponent,
     GlobalCommunityComponent,
   ],
   imports: [

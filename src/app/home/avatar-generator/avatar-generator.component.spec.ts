@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { AvatarGeneratorComponent } from './avatar-generator.component';
+import { AttributeSelectorComponent } from './attribute-selector/attribute-selector.component';
 import { SharedModule } from '../../shared/shared.module';
 
 describe('AvatarGeneratorComponent', () => {
@@ -9,8 +11,8 @@ describe('AvatarGeneratorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AvatarGeneratorComponent],
-      imports: [SharedModule],
+      declarations: [AvatarGeneratorComponent, AttributeSelectorComponent],
+      imports: [FormsModule, SharedModule],
     })
       .compileComponents();
   }));
