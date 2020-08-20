@@ -26,9 +26,11 @@ export class AttributeSelectorComponent implements OnInit {
 
   getPreviewItem(value: string): string {
     let image = '';
-    const { type } = this.decorator;
-    image = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 20 20" version="1.1" shape-rendering="crispEdges">
-    ${getPreview(type, value, this.color)}</svg>`;
+    if (this.decorator) {
+      const { type } = this.decorator;
+      image = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 20 20" version="1.1" shape-rendering="crispEdges">
+        ${getPreview(type, value, this.color)}</svg>`;
+    }
     return image;
   }
 

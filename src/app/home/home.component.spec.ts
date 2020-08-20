@@ -5,6 +5,7 @@ import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CommunitiesComponent } from './communities/communities.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
 import { OurGoalComponent } from './our-goal/our-goal.component';
 import { PreviousEventsComponent } from './previous-events/previous-events.component';
 import { GlobalCommunityComponent } from './global-community/global-community.component';
@@ -24,6 +25,7 @@ describe('HomeComponent', () => {
         BannerComponent,
         AboutUsComponent,
         CommunitiesComponent,
+        SponsorsComponent,
         OurGoalComponent,
         PreviousEventsComponent,
         GlobalCommunityComponent,
