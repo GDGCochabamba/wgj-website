@@ -3,7 +3,7 @@ export type KeyAvatar = 'hair' | 'clothes' | 'mouth' | 'earrings' | 'eyebrows' |
 export type AvatarDecoratorItem = {
   options: string[],
   currentValue: string,
-  color: string,
+  color?: string,
   name: string,
   type: string,
 };
