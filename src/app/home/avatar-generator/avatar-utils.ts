@@ -3,11 +3,11 @@ import { getPreview } from './avatar-selector-path';
 
 function getRandonItem(options: string[]): string {
   const size = options.length;
-  const index = Math.floor(Math.random() * size)
+  const index = Math.floor(Math.random() * size);
   return options[index];
 }
 const paleteColors = ['#262E33', '#65C9FF', '#5199E4', '#25557C', '#E5E5E5', '#929598', '#3C4F5C', '#B1E2FF', '#A7FFC4', '#FFDEB5', '#FFAFB9', '#FFFFB1', '#FF488E', '#FF5C5C', '#FFFFFF'];
-const hairColors = ['#A55728', '#2C1B18', '#B58143', '#D6B370', '#724133', '#4A312C','#F59797', '#ECDCBF', '#C93305', '#E8E1E1']
+const hairColors = ['#A55728', '#2C1B18', '#B58143', '#D6B370', '#724133', '#4A312C', '#F59797', '#ECDCBF', '#C93305', '#E8E1E1'];
 const optionHair = ['bigHair', 'bob', 'bun', 'curly', 'curvy', 'dreads', 'frida', 'froAndBand', 'fro', 'longButNotTooLong',
 'miaWallace', 'shavedSides', 'straightAndStrand', 'straight01', 'straight02', 'dreads01', 'dreads02', 'frizzle', 'theCaesar',
 'shaggyMullet', 'shaggy', 'shortCurly', 'shortFlat', 'shortRound', 'sides', 'shortWaved', 'theCaesarAndSidePart', 'none'];
@@ -20,7 +20,7 @@ const optionGlasses = ['prescription01', 'prescription02', 'kurt', 'round', 'sun
 const optionHat = ['hat', 'eyepatch', 'turban', 'hijab', 'winterHat01', 'winterHat02', 'winterHat03', 'winterHat04', 'none'];
 const optionClothes = ['blazerAndShirt', 'blazerAndSweater', 'collarAndSweater', 'hoodie', 'overall', 'shirtCrewNeck',
     'shirtScoopNeck', 'shirtVNeck', 'graphicShirt'];
-    const optionEarrings = ['skullOutline', 'skull', 'resist', 'pizza', 'hola', 'diamond', 'deer', 'cumbia', 'bear',
+const optionEarrings = ['skullOutline', 'skull', 'resist', 'pizza', 'hola', 'diamond', 'deer', 'cumbia', 'bear',
     'bat', 'scesi', 'angular', 'gdg', 'wtm', 'none'];
 const optionsBody = ['tanned', 'yellow', 'pale', 'light', 'brown', 'darkBrown', 'black'];
 const hairColor = getRandonItem(hairColors);
@@ -98,9 +98,8 @@ export function buildAvatar(avatar: AvatarOptions): string {
   svg = Object.keys(avatar)
     .map((key: KeyAvatar) => getPreview(key, avatar[key].currentValue, avatar[key].color))
     .join();
-    return `
-    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" shape-rendering="crispEdges" fill="none">
-      ${svg}
-    </svg>`;
+  return `<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" shape-rendering="crispEdges" fill="none">
+    ${svg}
+  </svg>`;
 }
