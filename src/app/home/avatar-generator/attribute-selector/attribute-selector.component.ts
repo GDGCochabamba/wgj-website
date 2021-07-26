@@ -15,11 +15,11 @@ export class AttributeSelectorComponent implements OnInit {
   @Input() decorator: AvatarDecoratorItem;
   @Input() dialogId: string;
   color: string;
-  haveColor: boolean;
+  hasColor: boolean;
 
   ngOnInit(): void {
     this.color = this.decorator?.color;
-    this.haveColor = 'color' in this.decorator;
+    this.hasColor = 'color' in this.decorator;
   }
 
   selectItem(item: string): void {
@@ -33,7 +33,7 @@ export class AttributeSelectorComponent implements OnInit {
       image = `<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
       xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" shape-rendering="crispEdges" fill="none">
       ${getPreview(type, value, this.color)}
-      </svg>`
+      </svg>`;
     }
     return image;
   }
@@ -51,7 +51,7 @@ export class AttributeSelectorComponent implements OnInit {
       image = `<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
       xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" shape-rendering="crispEdges" fill="none">
       ${getPreview(type, options[0], this.color)}
-      </svg>`
+      </svg>`;
     }
     return image;
   }
