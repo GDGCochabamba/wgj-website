@@ -716,7 +716,7 @@ export function getBeard(type: string, color: string): string {
   </g>`;
 }
 
-export function getPreview(type: string, selectedValue: string, color: string): string {
+export function getPreview(type: string, selectedValue: string, color?: string): string {
   let decoratorPath = '';
   switch (type) {
     case 'hair':

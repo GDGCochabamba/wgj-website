@@ -19,7 +19,7 @@ const optionEyes = ['squint', 'closed', 'cry', 'eyeRoll', 'happy', 'hearts', 'si
 const optionGlasses = ['prescription01', 'prescription02', 'kurt', 'round', 'sunglasses', 'wayfarers', 'none'];
 const optionHat = ['hat', 'eyepatch', 'turban', 'hijab', 'winterHat01', 'winterHat02', 'winterHat03', 'winterHat04', 'none'];
 const optionClothes = ['blazerAndShirt', 'blazerAndSweater', 'collarAndSweater', 'hoodie', 'overall', 'shirtCrewNeck',
-    'shirtScoopNeck', 'shirtScoopNeck', 'shirtVNeck', 'graphicShirt'];
+    'shirtScoopNeck', 'shirtVNeck', 'graphicShirt'];
     const optionEarrings = ['skullOutline', 'skull', 'resist', 'pizza', 'hola', 'diamond', 'deer', 'cumbia', 'bear',
     'bat', 'scesi', 'angular', 'gdg', 'wtm', 'none'];
 const optionsBody = ['tanned', 'yellow', 'pale', 'light', 'brown', 'darkBrown', 'black'];
