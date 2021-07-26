@@ -19,7 +19,7 @@ export class AttributeSelectorComponent implements OnInit {
 
   ngOnInit(): void {
     this.color = this.decorator?.color;
-    this.hasColor = 'color' in this.decorator;
+    this.hasColor = !!this.decorator && 'color' in this.decorator;
   }
 
   selectItem(item: string): void {
