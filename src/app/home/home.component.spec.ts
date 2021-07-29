@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
+import { RegisterButtonComponent } from './banner/register-button/register-button.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CommunitiesComponent } from './communities/communities.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
@@ -23,6 +24,7 @@ describe('HomeComponent', () => {
       declarations: [
         HomeComponent,
         BannerComponent,
+        RegisterButtonComponent,
         AboutUsComponent,
         CommunitiesComponent,
         SponsorsComponent,
