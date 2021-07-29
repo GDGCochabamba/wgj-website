@@ -23,6 +23,10 @@ a {
   color: $primary-color;
   font-size: 2.4285rem;
   font-weight: bold;
+
+  &.title--small {
+    font-size: 1.75rem;
+  }
 }
 
 .description-text {
