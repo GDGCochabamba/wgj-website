@@ -21,7 +21,7 @@ const optionHat = ['hat', 'eyepatch', 'turban', 'hijab', 'winterHat01', 'winterH
 const optionClothes = ['blazerAndShirt', 'blazerAndSweater', 'collarAndSweater', 'hoodie', 'overall', 'shirtCrewNeck',
     'shirtScoopNeck', 'shirtVNeck', 'graphicShirt'];
 const optionEarrings = ['skullOutline', 'skull', 'resist', 'pizza', 'hola', 'diamond', 'deer', 'cumbia', 'bear',
-    'bat', 'scesi', 'angular', 'gdg', 'wtm', 'none'];
+    'bat', 'scesi', 'angular', 'gdg', 'wtm', 'makerHouse', 'gp4', 'flutter', 'mujeresTics', 'adevi', 'none'];
 const optionsBody = ['tanned', 'yellow', 'pale', 'light', 'brown', 'darkBrown', 'black'];
 const hairColor = getRandonItem(hairColors);
 export const avatarOptions: AvatarOptions = {
