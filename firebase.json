@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/wgj-website-2022",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
