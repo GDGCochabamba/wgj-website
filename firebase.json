@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/wgj-website-2022",
+    "public": "dist/wgj-website",
     "ignore": [
       "firebase.json",
       "**/.*",
