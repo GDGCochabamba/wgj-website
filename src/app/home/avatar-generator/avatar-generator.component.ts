@@ -1,4 +1,9 @@
-import { Component, ViewChild, ElementRef, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  ViewChild,
+  ElementRef,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 
 import htmlToImage from 'html-to-image';
 
@@ -18,16 +23,15 @@ export class AvatarGeneratorComponent {
   avatarKeys = Object.keys(avatarOptions);
 
   downloadImage(): void {
-    htmlToImage.toPng(this.screen.nativeElement)
-      .then(dataUrl => {
+    htmlToImage
+      .toPng(this.screen.nativeElement)
+      .then((dataUrl) => {
         this.canvas.nativeElement.src = dataUrl;
         this.downloadLink.nativeElement.href = dataUrl;
         this.downloadLink.nativeElement.download = 'wgj-bolivia-avatar.png';
         this.downloadLink.nativeElement.click();
       })
-      .catch(error =>
-        console.error('oops, something went wrong!', error),
-      );
+      .catch((error) => console.error('oops, something went wrong!', error));
   }
 
   buildAvatarSvg(): string {

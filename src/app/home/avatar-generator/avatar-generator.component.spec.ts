@@ -13,8 +13,7 @@ describe('AvatarGeneratorComponent', () => {
     TestBed.configureTestingModule({
       declarations: [AvatarGeneratorComponent, AttributeSelectorComponent],
       imports: [FormsModule, SharedModule],
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

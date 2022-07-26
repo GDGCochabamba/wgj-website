@@ -4,6 +4,5 @@ export const config: ScullyConfig = {
   projectRoot: './src',
   projectName: 'wgj-website',
   outDir: './dist/static',
-  routes: {
-  },
+  routes: {},
 };

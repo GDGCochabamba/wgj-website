@@ -4,31 +4,44 @@
     <div class="row">
       <div class="col s12 offset-m2 m8">
         <p class="description-text">
-          Desarrollamos esta herramienta para que puedas crear tu avatar y usarlo en tu cuenta de Discord para
-          interactuar con todas las participantes.
+          Desarrollamos esta herramienta para que puedas crear tu avatar y
+          usarlo en tu cuenta de Discord para interactuar con todas las
+          participantes.
         </p>
       </div>
     </div>
-    <img class="mb-2 max-w-100" src="assets/images/avatar-characters.svg" alt="personajes pixelados">
+    <img
+      class="mb-2 max-w-100"
+      src="assets/images/avatar-characters.svg"
+      alt="personajes pixelados"
+    />
   </div>
   <div class="row">
     <div class="col s12 m6">
       <div #screen class="bg-image center px-2">
-        <img class="logo" src="assets/images/logo.svg" alt="cielo de noche">
+        <img class="logo" src="assets/images/logo.svg" alt="cielo de noche" />
         <div [innerHTML]="buildAvatarSvg() | safeHtml"></div>
       </div>
-      <button (click)="downloadImage()" type="button" class="nes-btn is-primary my-2">
+      <button
+        (click)="downloadImage()"
+        type="button"
+        class="nes-btn is-primary my-2"
+      >
         Descargar avatar
       </button>
     </div>
     <div class="col s12 m6">
       <div *ngFor="let key of avatarKeys" class="col s6 m4">
-        <wgj-attribute-selector [dialogId]="key" [avatar]="avatar" [decorator]="avatar[key]"></wgj-attribute-selector>
+        <wgj-attribute-selector
+          [dialogId]="key"
+          [avatar]="avatar"
+          [decorator]="avatar[key]"
+        ></wgj-attribute-selector>
       </div>
     </div>
   </div>
   <div class="hide">
-    <img #canvas>
+    <img #canvas />
     <a #downloadLink>Descarga</a>
   </div>
 </div>

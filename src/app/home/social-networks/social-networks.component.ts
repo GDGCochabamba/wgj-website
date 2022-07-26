@@ -5,4 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './social-networks.component.html',
   styleUrls: ['./social-networks.component.scss'],
 })
-export class SocialNetworksComponent { }
+export class SocialNetworksComponent {}

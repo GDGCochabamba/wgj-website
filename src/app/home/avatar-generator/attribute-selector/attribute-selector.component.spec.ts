@@ -12,8 +12,7 @@ describe('AttributeSelectorComponent', () => {
     TestBed.configureTestingModule({
       declarations: [AttributeSelectorComponent],
       imports: [FormsModule, SharedModule],
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

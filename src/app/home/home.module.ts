@@ -32,11 +32,6 @@ import { SharedModule } from '../shared/shared.module';
     AttributeSelectorComponent,
     GlobalCommunityComponent,
   ],
-  imports: [
-    CommonModule,
-    HomeRoutingModule,
-    SharedModule,
-    FormsModule,
-  ],
+  imports: [CommonModule, HomeRoutingModule, SharedModule, FormsModule],
 })
-export class HomeModule { }
+export class HomeModule {}

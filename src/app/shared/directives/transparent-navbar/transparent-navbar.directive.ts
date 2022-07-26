@@ -1,14 +1,10 @@
-import {
-  Directive,
-  ElementRef,
-  HostListener,
-} from '@angular/core';
+import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
   selector: '[wgjTransparentNavbar]',
 })
 export class TransparentNavbarDirective {
-  constructor(private elementRef: ElementRef) { }
+  constructor(private elementRef: ElementRef) {}
 
   @HostListener('window:scroll')
   onWindowsScroll(): void {

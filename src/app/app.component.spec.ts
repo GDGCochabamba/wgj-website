@@ -7,13 +7,8 @@ import { LayoutModule } from './layout/layout.module';
 describe('AppComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        LayoutModule,
-      ],
-      declarations: [
-        AppComponent,
-      ],
+      imports: [RouterTestingModule, LayoutModule],
+      declarations: [AppComponent],
     }).compileComponents();
   }));
 

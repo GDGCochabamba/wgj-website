@@ -6,7 +6,7 @@ import { Parallax } from 'materialize-css';
   selector: '[wgjParallax]',
 })
 export class ParallaxDirective implements OnInit {
-  constructor(private element: ElementRef) { }
+  constructor(private element: ElementRef) {}
 
   ngOnInit(): void {
     Parallax.init(this.element.nativeElement);

@@ -86,11 +86,11 @@
   &.first-meetup {
     background-color: $first-meetup-color;
 
-    &::after{
+    &::after {
       box-shadow: inset -4px -4px $first-meetup-secondary-color;
     }
 
-    &:hover::after{
+    &:hover::after {
       box-shadow: inset -6px -6px $first-meetup-secondary-color;
     }
   }
@@ -98,11 +98,11 @@
   &.second-meetup {
     background-color: $second-meetup-color;
 
-    &::after{
+    &::after {
       box-shadow: inset -4px -4px $second-meetup-secondary-color;
     }
 
-    &:hover::after{
+    &:hover::after {
       box-shadow: inset -6px -6px $second-meetup-secondary-color;
     }
   }
@@ -110,11 +110,11 @@
   &.third-meetup {
     background-color: $third-meetup-color;
 
-    &::after{
+    &::after {
       box-shadow: inset -4px -4px $third-meetup-secondary-color;
     }
 
-    &:hover::after{
+    &:hover::after {
       box-shadow: inset -6px -6px $third-meetup-secondary-color;
     }
   }

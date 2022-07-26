@@ -7,16 +7,9 @@ import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
-  imports: [
-    ScullyLibModule,
-    BrowserModule,
-    AppRoutingModule,
-    LayoutModule,
-  ],
+  declarations: [AppComponent],
+  imports: [ScullyLibModule, BrowserModule, AppRoutingModule, LayoutModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

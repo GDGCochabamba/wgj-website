@@ -21,4 +21,4 @@ import { SafeHtmlPipe } from './pipes/safe-html/safe-html.pipe';
     SafeHtmlPipe,
   ],
 })
-export class SharedModule { }
+export class SharedModule {}

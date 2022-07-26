@@ -5,4 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './previous-events.component.html',
   styleUrls: ['./previous-events.component.scss'],
 })
-export class PreviousEventsComponent { }
+export class PreviousEventsComponent {}

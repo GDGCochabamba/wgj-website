@@ -5,4 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './global-community.component.html',
   styleUrls: ['./global-community.component.scss'],
 })
-export class GlobalCommunityComponent { }
+export class GlobalCommunityComponent {}

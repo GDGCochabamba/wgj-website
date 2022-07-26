@@ -16,7 +16,7 @@ export class ModalDirective implements AfterViewInit {
   @Output() closeModal = new EventEmitter();
   private modal: Modal;
 
-  constructor(private elementRef: ElementRef) { }
+  constructor(private elementRef: ElementRef) {}
 
   ngAfterViewInit(): void {
     this.modal = Modal.init(this.elementRef.nativeElement, {
