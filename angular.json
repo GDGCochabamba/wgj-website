@@ -119,7 +119,6 @@
       }
     }
   },
-  "defaultProject": "wgj-website",
   "cli": {
     "analytics": false
   }
