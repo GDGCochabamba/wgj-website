@@ -16,10 +16,12 @@
           <div [innerHTML]="getAvatar() | safeHtml"></div>
         </div>
         <div class="col s12 m6">
-          <label class="description-text black-text" for="favcolor">
-            Puedes cambiar el color 🎨 aquí:
-          </label>
-          <input type="color" name="favcolor" [(ngModel)]="color">
+          <div *ngIf="hasColor">
+            <label class="description-text black-text" for="favcolor">
+              Puedes cambiar el color 🎨 aquí:
+            </label>
+            <input type="color" name="favcolor" [(ngModel)]="color">
+          </div>
           <div class="row">
             <div *ngFor="let item of decorator.options" class="col s4 m3">
               <div class="card grey lighten-3">

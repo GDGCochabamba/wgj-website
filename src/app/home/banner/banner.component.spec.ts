@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BannerComponent } from './banner.component';
+import { RegisterButtonComponent } from './register-button/register-button.component';
 
 describe('BannerComponent', () => {
   let component: BannerComponent;
@@ -8,7 +9,7 @@ describe('BannerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [BannerComponent],
+      declarations: [BannerComponent, RegisterButtonComponent],
     })
       .compileComponents();
   }));
