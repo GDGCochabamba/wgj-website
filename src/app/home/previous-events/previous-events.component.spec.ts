@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PreviousEventsComponent } from './previous-events.component';
 
@@ -6,7 +6,7 @@ describe('PreviousEventsComponent', () => {
   let component: PreviousEventsComponent;
   let fixture: ComponentFixture<PreviousEventsComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [PreviousEventsComponent],
     })
