@@ -53,14 +53,18 @@ $main-color: #57280d;
       }
 
       .banner__action-button {
+        align-items: center;
+        display: flex;
         background-color: #f3a46a;
         border: 2px solid $main-color;
         border-radius: 20px;
         color: $main-color;
         font-size: 1.7rem;
         font-weight: bold;
+        justify-content: center;
         max-width: 100%;
         min-height: 60px;
+        text-align: center;
         width: 300px;
       }
     }
