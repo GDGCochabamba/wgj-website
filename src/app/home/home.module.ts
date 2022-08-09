@@ -17,6 +17,7 @@ import { AttributeSelectorComponent } from './avatar-generator/attribute-selecto
 import { SocialNetworksComponent } from './social-networks/social-networks.component';
 import { SharedModule } from '../shared/shared.module';
 import { ParticipantsComponent } from './participants/participants.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ParticipantsComponent } from './participants/participants.component';
     AttributeSelectorComponent,
     GlobalCommunityComponent,
     ParticipantsComponent,
+    VideoComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, SharedModule, FormsModule],
 })
