@@ -176,6 +176,11 @@ const optionsBody = [
   'darkBrown',
   'black',
 ];
+const optionNutria = [
+  'nutria1',
+  // 'nutria2',
+  'none',
+];
 const hairColor = getRandonItem(hairColors);
 export const avatarOptions: AvatarOptions = {
   body: {
@@ -243,6 +248,12 @@ export const avatarOptions: AvatarOptions = {
     options: optionHat,
     name: 'sombrero',
     type: 'hat',
+  },
+  nutria: {
+    currentValue: 'none',
+    options: optionNutria,
+    name: 'nutria',
+    type: 'nutria',
   },
 };
 
