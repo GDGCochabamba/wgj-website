@@ -8,7 +8,8 @@ export type KeyAvatar =
   | 'glasses'
   | 'body'
   | 'hat'
-  | 'beard';
+  | 'beard'
+  | 'nutria';
 
 export type AvatarDecoratorItem = {
   options: string[];
