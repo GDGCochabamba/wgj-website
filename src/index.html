@@ -1,89 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <title>Women Game Jam Bolivia</title>
-    <base href="/" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Participa y desarrolla tu creatividad e imaginación en un Game Jam online junto a más chicas creando tus propios juegos."
-    />
-    <meta
-      name="keywords"
-      content="women game jam bolivia, wome game jam, bolivia, cochabamba"
-    />
-    <meta name="og:title" content="Wome Game Jam Bolivia" />
-    <meta name="og:image" content="assets/images/logo-wgj.png" />
-    <meta name="og:site_name" content="Women Game Jam Bolivia" />
-    <meta
-      name="og:description"
-      content="Participa y desarrolla tu creatividad e imaginación en un Game Jam online junto a más chicas creando tus propios juegos."
-    />
-    <!-- TODO: Change this favicon when design gives us the final one -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=0.1" />
-    <link rel="canonical" href="https://wgj.gdg.com.bo" />
-  </head>
-
-  <body>
-    <wgj-root></wgj-root>
-
-    <!-- Analytics Configuration -->
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js';
-      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js';
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: 'AIzaSyD9zWHnGBdxml5lhikxFs0C9RrK7Y9DFwo',
-        authDomain: 'wgj-bolivia.firebaseapp.com',
-        databaseURL: 'https://wgj-bolivia.firebaseio.com',
-        projectId: 'wgj-bolivia',
-        storageBucket: 'wgj-bolivia.appspot.com',
-        messagingSenderId: '791814253213',
-        appId: '1:791814253213:web:0e2dc18b4fe3ea6ba7c274',
-        measurementId: 'G-HTMS6V57DM',
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
-
-    <!-- AddEvent script -->
-    <script
-      type="text/javascript"
-      src="https://addevent.com/libs/atc/1.6.1/atc.min.js"
-      async
-      defer
-    ></script>
-
-    <!-- AddEvent settings -->
-    <script type="text/javascript">
-      window.addeventasync = () => {
-        addeventatc.settings({
-          facebook: {
-            show: true,
-            text: 'Facebook',
-          },
-          google: {
-            show: true,
-            text: 'Google',
-          },
-          appleical: {
-            show: true,
-            text: 'Apple Calendar',
-          },
-          dropdown: {
-            order: 'facebook,google,appleical',
-          },
-          css: false,
-        });
-      };
-    </script>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WgjWebsite</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <wgj-root></wgj-root>
+</body>
 </html>
