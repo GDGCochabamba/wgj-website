@@ -1,0 +1,60 @@
+.banner {
+  height: 100vh;
+  max-height: 862px;
+  position: relative;
+
+  .banner__title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+    padding-top: 136px;
+
+    .banner__title {
+      background-image: url('/assets/img/title-bg.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      gap: 10px;
+      min-height: 206px;
+      max-width: 100%;
+      padding: 30px 68px;
+      position: relative;
+      text-align: center;
+      text-shadow: 0 4px 4px #00000040;
+      width: 482px;
+
+      p {
+        margin-block: 0;
+      }
+    }
+  }
+
+  .banner__cloud-1 {
+    left: 142px;
+    position: absolute;
+    top: 136px;
+  }
+
+  .banner__cloud-2 {
+    right: 104px;
+    position: absolute;
+    top: 216px;
+  }
+
+  .banner__girls-img {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  img {
+    max-width: 100%;
+    z-index: -1;
+  }
+}
