@@ -11,7 +11,14 @@ import { FaqComponent } from './faq/faq.component';
 import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
-  declarations: [BannerComponent, HomeComponent, CommunitiesComponent, InfoComponent, FaqComponent, VideosComponent],
+  declarations: [
+    BannerComponent,
+    HomeComponent,
+    CommunitiesComponent,
+    InfoComponent,
+    FaqComponent,
+    VideosComponent,
+  ],
   imports: [CommonModule, SectionTitleComponent, CallToActionComponent],
   exports: [HomeComponent],
 })
