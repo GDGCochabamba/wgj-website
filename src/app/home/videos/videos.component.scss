@@ -1,0 +1,30 @@
+.videos {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 236px;
+  position: relative;
+
+  wgj-section-title {
+    width: 540px;
+  }
+
+  .videos__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+
+    iframe {
+      border: 6px solid #f3a46a;
+      max-width: 100%;
+    }
+  }
+
+  .videos__cloud {
+    top: -50px;
+    right: 0;
+    position: absolute;
+  }
+}

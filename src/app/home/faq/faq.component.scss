@@ -1,0 +1,27 @@
+.faq {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+  position: relative;
+
+  wgj-section-title {
+    width: 460px;
+  }
+
+  ul {
+    list-style-image: url(/assets/img/title-arrow.png);
+    margin-block-start: 40px;
+
+    .faq__question-content {
+      margin-bottom: 47px;
+      padding-left: 15px;
+      position: relative;
+      top: -10px;
+
+      .faq__question {
+        font-weight: 700;
+      }
+    }
+  }
+}

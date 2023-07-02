@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="faq">
+    <wgj-section-title> Preguntas frecuentes </wgj-section-title>
+
+    <ul>
+      <li *ngFor="let item of questions">
+        <div class="faq__question-content">
+          <div class="faq__question">
+            {{ item.question }}
+          </div>
+          {{ item.answer }}
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
