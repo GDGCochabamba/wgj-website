@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="videos">
+    <img class="videos__cloud" src="assets/img/cloud.png" alt="nube pixelada" />
+    <wgj-section-title> Videos de Eventos Previos </wgj-section-title>
+    <div class="videos__content">
+      <iframe
+        *ngFor="let video of videos"
+        width="500"
+        height="280"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        [src]="video.url"
+        [title]="video.title"
+      ></iframe>
+    </div>
+  </div>
+</div>

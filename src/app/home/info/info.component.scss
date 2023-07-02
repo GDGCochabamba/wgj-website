@@ -1,0 +1,43 @@
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px 0;
+  position: relative;
+
+  .info__content {
+    box-sizing: border-box;
+    padding: 0 15px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      padding-left: 82px;
+      width: 50%;
+    }
+
+    wgj-section-title {
+      width: 560px;
+    }
+  }
+
+  .info__images {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    img {
+      height: fit-content;
+      max-width: 100%;
+    }
+  }
+
+  .info__cloud {
+    bottom: -220px;
+    left: 120px;
+    position: absolute;
+  }
+}

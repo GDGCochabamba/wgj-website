@@ -1,6 +1,7 @@
 .banner {
   height: 100vh;
   max-height: 862px;
+  min-height: 700px;
   position: relative;
 
   .banner__title-container {
@@ -9,42 +10,88 @@
     align-items: center;
     justify-content: center;
     gap: 54px;
-    padding-top: 136px;
+    padding: 80px 15px 0;
+    
+    @media (min-width: 768px) {
+      padding: 136px 15px 0;
+    }
 
     .banner__title {
+      align-items: center;
       background-image: url('/assets/img/title-bg.png');
-      background-size: 100% 100%;
       background-repeat: no-repeat;
+      background-size: 100% 100%;
       box-sizing: border-box;
       color: #ffffff;
       display: flex;
       flex-direction: column;
       font-weight: 700;
       gap: 10px;
-      min-height: 206px;
       max-width: 100%;
-      padding: 30px 68px;
+      min-height: 206px;
+      padding: 30px 30px 0;
       position: relative;
       text-align: center;
       text-shadow: 0 4px 4px #00000040;
       width: 482px;
 
+      @media (min-width: 768px) {
+        padding: 30px 68px 0;
+      }
+
       p {
         margin-block: 0;
+      }
+
+      .banner__screw {
+        position: absolute;
+        z-index: 0;
+
+        &.banner__screw--1 {
+          left: 10px;
+          top: 6px;
+        }
+
+        &.banner__screw--2 {
+          right: 10px;
+          top: 6px;
+        }
+
+        &.banner__screw--3 {
+          bottom: 36px;
+          left: 10px;
+        }
+
+        &.banner__screw--4 {
+          bottom: 36px;
+          right: 10px;
+        }
       }
     }
   }
 
-  .banner__cloud-1 {
-    left: 142px;
+  .banner__cloud {
     position: absolute;
-    top: 136px;
-  }
 
-  .banner__cloud-2 {
-    right: 104px;
-    position: absolute;
-    top: 216px;
+    &.banner__cloud--1 {
+      left: 28px;
+      top: 16px;
+
+      @media (min-width: 768px) {
+        left: 142px;
+        top: 136px;
+      }
+    }
+
+    &.banner__cloud--2 {
+      right: 20px;
+      top: 342px;
+
+      @media (min-width: 768px) {
+        right: 104px;
+        top: 216px;
+      }
+    }
   }
 
   .banner__girls-img {
@@ -52,7 +99,7 @@
     left: 0;
     position: absolute;
   }
-  
+
   img {
     max-width: 100%;
     z-index: -1;
