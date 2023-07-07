@@ -5,11 +5,15 @@
   position: relative;
 
   .info__content {
+    align-items: center;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     padding: 0 15px;
     width: 100%;
 
     @media (min-width: 768px) {
+      display: block;
       padding-left: 82px;
       width: 50%;
     }
@@ -30,7 +34,7 @@
     }
 
     img {
-      height: fit-content;
+      height: auto;
       max-width: 100%;
     }
   }
