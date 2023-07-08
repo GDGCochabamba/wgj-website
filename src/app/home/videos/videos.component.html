@@ -1,10 +1,13 @@
 <div class="container">
   <div class="videos">
     <img class="videos__cloud" src="assets/img/cloud.png" alt="nube pixelada" />
-    <wgj-section-title> Videos de Eventos Previos </wgj-section-title>
+    <wgj-section-title data-aos="fade-up">
+      Videos de Eventos Previos
+    </wgj-section-title>
     <div class="videos__content">
       <iframe
         *ngFor="let video of videos"
+        data-aos="fade-up"
         width="500"
         height="280"
         frameborder="0"

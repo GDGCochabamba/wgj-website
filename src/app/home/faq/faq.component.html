@@ -1,10 +1,12 @@
 <div class="container">
   <div class="faq">
-    <wgj-section-title> Preguntas frecuentes </wgj-section-title>
+    <wgj-section-title data-aos="fade-up">
+      Preguntas frecuentes
+    </wgj-section-title>
 
     <ul>
       <li *ngFor="let item of questions">
-        <div class="faq__question-content">
+        <div class="faq__question-content" data-aos="fade-up">
           <div class="faq__question">
             {{ item.question }}
           </div>

@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import * as AOS from 'aos';
 
 @Component({
   selector: 'wgj-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'wgj-website';
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    AOS.init();
+  }
 }

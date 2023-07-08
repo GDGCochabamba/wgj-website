@@ -4,7 +4,12 @@
   max-width: 100%;
   padding: 0;
   position: relative;
+  transition: width 0.4s;
   width: 235px;
+
+  &:hover {
+    width: 237px;
+  }
 
   .call-to-action__label {
     align-items: center;
