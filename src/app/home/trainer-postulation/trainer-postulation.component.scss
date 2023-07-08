@@ -1,0 +1,46 @@
+.trainer-postulation {
+  background-color: #653780;
+  color: #ffffff;
+  position: relative;
+
+  .trainer-postulation__content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-bottom: 176px;
+    padding-top: 100px;
+    position: inherit;
+    z-index: 1;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .trainer-postulation__section {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      
+      @media (min-width: 768px) {
+        display: block;
+        height: 50%;
+        width: 50%;
+      }
+    }
+  }
+
+  .girl {
+    bottom: 0;
+    position: absolute;
+
+    &.girl--left {
+      left: 0;
+    }
+
+    &.girl--right {
+      right: 0;
+    }
+  }
+}

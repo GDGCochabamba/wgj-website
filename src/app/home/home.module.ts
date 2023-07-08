@@ -9,6 +9,9 @@ import { SectionTitleComponent } from '../shared/section-title/section-title.com
 import { CallToActionComponent } from '../shared/call-to-action/call-to-action.component';
 import { FaqComponent } from './faq/faq.component';
 import { VideosComponent } from './videos/videos.component';
+import { TrainerPostulationComponent } from './trainer-postulation/trainer-postulation.component';
+import { ButtonComponent } from '../shared/button/button.component';
+import { SponsorRegistrationComponent } from './sponsor-registration/sponsor-registration.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +21,15 @@ import { VideosComponent } from './videos/videos.component';
     InfoComponent,
     FaqComponent,
     VideosComponent,
+    TrainerPostulationComponent,
+    SponsorRegistrationComponent,
   ],
-  imports: [CommonModule, SectionTitleComponent, CallToActionComponent],
+  imports: [
+    CommonModule,
+    SectionTitleComponent,
+    CallToActionComponent,
+    ButtonComponent,
+  ],
   exports: [HomeComponent],
 })
 export class HomeModule {}

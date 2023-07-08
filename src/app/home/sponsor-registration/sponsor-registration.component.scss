@@ -1,0 +1,41 @@
+.sponsor-registration {
+  position: relative;
+
+  .sponsor-registration__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+    padding-top: 114px;
+    position: inherit;
+    z-index: 1;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    wgj-section-title {
+      width: 480px;
+    }
+  }
+
+  .cloud {
+    position: absolute;
+
+    &.cloud--1 {
+      left: -45px;
+      top: 155px;
+    }
+
+    &.cloud--2 {
+      right: 175px;
+      top: 54px;
+    }
+  }
+
+  .little-animal {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+}

@@ -14,6 +14,10 @@
   position: relative;
   width: 100%;
 
+  &.section-title--orange {
+    background-image: url('/assets/img/title-small-orange-bg.png');
+  }
+
   .section-title__arrow {
     margin: 0 32px 0 34px;
   }
