@@ -1,0 +1,45 @@
+<!-- Rounded dialog -->
+<div class="card nes-container with-title is-rounded">
+  <p class="title">{{ decorator.name }}</p>
+  <div [innerHTML]="getIcon() | sanitizeHtml" (click)="openDialog()"></div>
+</div>
+
+<dialog class="modal nes-dialog is-rounded" [id]="'dialog-default-' + decorator.name">
+  <ng-container *ngIf="decorator">
+    <button
+      type="button"
+      class="nes-btn is-error close-btn white-text"
+      (click)="closeDialog()"
+    >
+      X
+    </button>
+    <form method="dialog">
+      <p class="pixel-title">Selecciona un tipo de {{ decorator.name }}</p>
+      <div class="flex-row">
+        <div class="avatar-profile">
+          <div [innerHTML]="getAvatar() | sanitizeHtml"></div>
+        </div>
+        <div class="avatar-profile">
+          <div *ngIf="hasColor">
+            <label class="description-text black-text" for="favcolor">
+              Puedes cambiar el color 🎨 aquí:
+            </label>
+            <input type="color" name="favcolor" [(ngModel)]="color" />
+          </div>
+          <div class="avatar-items">
+            <div *ngFor="let item of decorator.options" class="col s4 m3">
+              <div class="card grey lighten-3">
+                <div
+                  class="nes-container is-rounded"
+                  (click)="selectItem(item)"
+                  [class.selectedItem]="item === decorator.currentValue"
+                  [innerHTML]="getPreviewItem(item) | sanitizeHtml"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+</dialog>

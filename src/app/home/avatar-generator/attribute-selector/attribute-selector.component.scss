@@ -1,0 +1,44 @@
+.box {
+  margin-left: 50px;
+}
+
+.card {
+  height: 120px;
+  width: 120px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar-profile {
+  flex: 1;
+}
+
+.avatar-items {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.black-text {
+  color: #653780;
+}
+
+.pixel-title {
+  font-size: 1.7rem;
+}
+
+.selectedItem {
+  background-color: #653780;
+}

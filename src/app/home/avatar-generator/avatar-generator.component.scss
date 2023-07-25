@@ -1,0 +1,85 @@
+.bg-image {
+  flex: 1;
+  background-color: #98dcd8;
+  color: #fff;
+  padding-top: 20px;
+  background-size: cover;  
+  border-radius: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.girl-chat {
+  margin-bottom: -70px;
+}
+
+.boy-chat {
+  margin-bottom: -100px;
+}
+
+.boy-chat-container {
+  margin-left: 120px;
+}
+
+.separator-top {
+  margin-top: 70px;
+}
+
+.arrow {
+  flex: 0;
+  align-self: center;
+  margin: 8px;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar-profile {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.avatar-items {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar__download-button {
+  align-items: center;
+  display: flex;
+  background-color: #f3a46a;
+  border: 2px solid #57280d;
+  border-radius: 20px;
+  color: #57280d;
+  font-size: 1.7rem;
+  font-weight: bold;
+  justify-content: center;
+  margin: 16px auto;
+  max-width: 100%;
+  min-height: 60px;
+  text-align: center;
+  width: 240px;
+}

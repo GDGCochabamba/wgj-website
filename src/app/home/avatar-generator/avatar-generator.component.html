@@ -1,0 +1,75 @@
+<div class="center-align container separator-top">
+  <div class="separator-top">
+    <wgj-section-title data-aos="fade-up">
+      Crea tu propio avatar
+    </wgj-section-title>
+
+    <section class="separator-top" data-aos="fade-up">
+      <section class="message-list">
+        <section class="message -left flex-row">
+          <div class="arrow">
+            <img
+              class="mb-2 max-w-100 girl-chat"
+              src="assets/img/girl-3.png"
+              alt="personajes pixelados"
+            />
+          </div>
+          <!-- Balloon -->
+          <div class="nes-balloon from-left">
+            <p>Desarrollamos esta herramienta para que puedas crear tu avatar</p>
+          </div>
+        </section>
+    
+        <section class="message -right flex-row">
+          <!-- Balloon -->
+          <div class="nes-balloon from-right separator-top boy-chat-container">
+            <p>usarlo en tu cuenta de Discord para interactuar con todas las participantes.</p>
+          </div>
+          <div class="arrow">
+            <img
+                class="mb-2 max-w-100 boy-chat flip-horizontal"
+                src="assets/img/boy-1.png"
+                alt="personajes pixelados"
+              />
+          </div>
+        </section>
+      </section>
+    </section>
+  </div>
+  <div class="flex-row separator-top">
+    <div class="avatar-profile">
+      <div #screen class="bg-image center px-2" [ngStyle]="{'background-image': 'url(../../../assets/img/' + bgImage + ')'}">
+        <div [innerHTML]="buildAvatarSvg() | sanitizeHtml"></div>
+      </div>
+      <div class="flex-row">
+        <div class="arrow flip-horizontal" (click)="previousBgImage()">
+          <img src="assets/img/title-arrow.png" alt="arrow" />
+        </div>
+        <button
+          (click)="downloadImage()"
+          type="button"
+          class="avatar__download-button"
+        >
+          Descargar avatar
+        </button>
+        <div class="arrow" (click)="nextBgImage()">
+          <img src="assets/img/title-arrow.png" alt="arrow" />
+        </div>
+      </div>
+      
+    </div>
+    <div class="avatar-items">
+      <div *ngFor="let key of avatarKeys">
+        <wgj-attribute-selector
+          [dialogId]="key"
+          [avatar]="avatar"
+          [decorator]="getAvatarDecoratorItem(key)"
+        ></wgj-attribute-selector>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="hide">
+  <img #canvas />
+  <a #downloadLink>Descarga</a>
+</div>

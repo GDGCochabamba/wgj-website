@@ -12,6 +12,10 @@ import { VideosComponent } from './videos/videos.component';
 import { TrainerPostulationComponent } from './trainer-postulation/trainer-postulation.component';
 import { ButtonComponent } from '../shared/button/button.component';
 import { SponsorRegistrationComponent } from './sponsor-registration/sponsor-registration.component';
+import { AvatarGeneratorComponent } from './avatar-generator/avatar-generator.component'; 
+import { AttributeSelectorComponent } from './avatar-generator/attribute-selector/attribute-selector.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SanitizeHtmlPipe } from './sanitizeHtml.pipe';
 
 @NgModule({
   declarations: [
@@ -23,12 +27,17 @@ import { SponsorRegistrationComponent } from './sponsor-registration/sponsor-reg
     VideosComponent,
     TrainerPostulationComponent,
     SponsorRegistrationComponent,
+    AvatarGeneratorComponent,
+    AttributeSelectorComponent,
+    SanitizeHtmlPipe,
   ],
   imports: [
     CommonModule,
     SectionTitleComponent,
     CallToActionComponent,
     ButtonComponent,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports: [HomeComponent],
 })
