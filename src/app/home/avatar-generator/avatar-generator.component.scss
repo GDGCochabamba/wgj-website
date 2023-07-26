@@ -1,85 +1,136 @@
-.bg-image {
-  flex: 1;
-  background-color: #98dcd8;
-  color: #fff;
-  padding-top: 20px;
-  background-size: cover;  
-  border-radius: 20px;
-}
+.avatar {
+  padding-top: 100px;
 
-.hide {
-  display: none;
-}
+  .avatar__first-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
-.girl-chat {
-  margin-bottom: -70px;
-}
+    wgj-section-title {
+      width: 460px;
+    }
 
-.boy-chat {
-  margin-bottom: -100px;
-}
+    .avatar__chats {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin-top: 70px;
 
-.boy-chat-container {
-  margin-left: 120px;
-}
+      @media (min-width: 768px) {
+        gap: 120px;
+        margin-top: 140px;
+      }
 
-.separator-top {
-  margin-top: 70px;
-}
+      .avatar__chat {
+        display: flex;
+        flex-direction: column;
 
-.arrow {
-  flex: 0;
-  align-self: center;
-  margin: 8px;
-}
+        .avatar__balloon {
+          max-width: 800px;
+          order: 1;
+          top: 0;
+        }
 
-.flip-horizontal {
-  transform: scaleX(-1);
-}
+        .avatar__kid {
+          order: 2;
+        }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
+        @media (min-width: 768px) {
+          flex-direction: row;
 
-.avatar-profile {
-  flex: 1;
-  margin-right: 20px;
-}
+          .avatar__balloon {
+            order: 2;
+            top: -80px;
+          }
 
-.avatar-items {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
+          .avatar__kid {
+            order: 1;
+          }
+        }
 
-.text {
-  margin-top: 20px;
-}
+        &.avatar__chat--right {
+          .avatar__kid {
+            margin-left: auto;
+          }
 
-.logo {
-  height: 70px;
-  width: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+          @media (min-width: 768px) {
+            .avatar__balloon {
+              order: 1;
+            }
 
-.avatar__download-button {
-  align-items: center;
-  display: flex;
-  background-color: #f3a46a;
-  border: 2px solid #57280d;
-  border-radius: 20px;
-  color: #57280d;
-  font-size: 1.7rem;
-  font-weight: bold;
-  justify-content: center;
-  margin: 16px auto;
-  max-width: 100%;
-  min-height: 60px;
-  text-align: center;
-  width: 240px;
+            .avatar__kid {
+              order: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .avatar__second-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 70px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .avatar__profile {
+      flex: 1;
+
+      .avatar__download-container {
+        display: flex;
+        flex-direction: row;
+
+        .avatar__arrow {
+          align-self: center;
+          flex: 0;
+          margin: 8px;
+
+          &.avatar__arrow--flip {
+            transform: scaleX(-1);
+          }
+        }
+
+        .avatar__download-button {
+          align-items: center;
+          background-color: #f3a46a;
+          border-radius: 20px;
+          border: 2px solid #57280d;
+          color: #57280d;
+          display: flex;
+          font-size: 1.7rem;
+          font-weight: bold;
+          justify-content: center;
+          margin: 16px auto;
+          max-width: 100%;
+          min-height: 60px;
+          text-align: center;
+          width: 240px;
+        }
+      }
+
+      .avatar__bg-image {
+        background-color: #98dcd8;
+        background-size: cover;
+        border-radius: 20px;
+        color: #ffffff;
+        flex: 1;
+        padding-top: 20px;
+      }
+    }
+
+    .avatar__items {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+      gap: 12px;
+      justify-content: center;
+    }
+  }
 }

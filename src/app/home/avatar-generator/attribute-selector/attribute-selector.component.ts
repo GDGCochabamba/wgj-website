@@ -1,3 +1,4 @@
+import { DOCUMENT } from '@angular/common';
 import {
   Component,
   OnInit,
@@ -9,7 +10,6 @@ import {
 import { AvatarDecoratorItem, AvatarOptions } from '../avatar-types';
 import { buildAvatar } from '../avatar-utils';
 import { getPreview } from '../avatar-selector-path';
-import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'wgj-attribute-selector',
@@ -23,22 +23,24 @@ export class AttributeSelectorComponent implements OnInit {
   @Input() dialogId!: string;
   color!: string;
   hasColor!: boolean;
-  constructor(@Inject(DOCUMENT) document: Document) {
-  }
+  constructor(@Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit(): void {
     this.color = this.decorator?.color!;
-    this.hasColor = !!this.decorator && 'color' in this.decorator;
+    this.hasColor = this.decorator && 'color' in this.decorator;
   }
 
   openDialog(): void {
-    const dialog = document.getElementById(`dialog-default-${this.decorator.name}`) as any;
-    console.log(dialog);
+    const dialog = this.document.getElementById(
+      `dialog-default-${this.decorator.name}`,
+    ) as any;
     dialog?.showModal();
   }
 
   closeDialog(): void {
-    const dialog = document.getElementById(`dialog-default-${this.decorator.name}`) as any;
+    const dialog = this.document.getElementById(
+      `dialog-default-${this.decorator.name}`,
+    ) as any;
     dialog?.close();
   }
 

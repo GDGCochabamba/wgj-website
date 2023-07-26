@@ -258,7 +258,11 @@ export function buildAvatar(avatar: AvatarOptions): string {
   let svg = '';
   svg = Object.keys(avatar)
     .map((key: string) =>
-      getPreview(key, avatar[key as KeyAvatar].currentValue, avatar[key as KeyAvatar].color!),
+      getPreview(
+        key,
+        avatar[key as KeyAvatar].currentValue,
+        avatar[key as KeyAvatar].color!,
+      ),
     )
     .join();
   return `<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"

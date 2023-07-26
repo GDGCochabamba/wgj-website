@@ -38,7 +38,8 @@ export class AvatarGeneratorComponent {
 
   previousBgImage(): void {
     const index = this.bgImages.indexOf(this.bgImage);
-    this.bgImage = this.bgImages[index - 1] || this.bgImages[this.bgImages.length - 1];
+    this.bgImage =
+      this.bgImages[index - 1] || this.bgImages[this.bgImages.length - 1];
   }
 
   nextBgImage(): void {

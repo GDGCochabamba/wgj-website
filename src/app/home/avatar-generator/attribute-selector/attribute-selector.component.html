@@ -4,7 +4,10 @@
   <div [innerHTML]="getIcon() | sanitizeHtml" (click)="openDialog()"></div>
 </div>
 
-<dialog class="modal nes-dialog is-rounded" [id]="'dialog-default-' + decorator.name">
+<dialog
+  class="modal nes-dialog is-rounded"
+  [id]="'dialog-default-' + decorator.name"
+>
   <ng-container *ngIf="decorator">
     <button
       type="button"

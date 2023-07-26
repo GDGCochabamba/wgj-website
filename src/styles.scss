@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import 'nes.css/css/nes.min.css';
+
 body {
   background: #45deff;
   font-family: 'Play', sans-serif;
@@ -32,6 +33,3 @@ body {
     max-width: 1140px;
   }
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
