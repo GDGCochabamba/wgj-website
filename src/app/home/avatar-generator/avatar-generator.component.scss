@@ -51,6 +51,7 @@
         &.avatar__chat--right {
           .avatar__kid {
             margin-left: auto;
+            transform: scaleX(-1);
           }
 
           @media (min-width: 768px) {
