@@ -21,8 +21,10 @@ export class AttributeSelectorComponent implements OnInit {
   @Input() avatar!: AvatarOptions;
   @Input() decorator!: AvatarDecoratorItem;
   @Input() dialogId!: string;
+
   color!: string;
   hasColor!: boolean;
+
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit(): void {
