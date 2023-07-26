@@ -1,0 +1,78 @@
+<div class="container avatar">
+  <div class="avatar__first-section">
+    <wgj-section-title data-aos="fade-up">
+      Crea tu propio avatar
+    </wgj-section-title>
+
+    <div class="avatar__chats" data-aos="fade-up">
+      <div class="avatar__chat">
+        <div class="nes-balloon from-left avatar__balloon">
+          <p>
+            Desarrollamos esta herramienta para que puedas crear tu avatar.
+          </p>
+        </div>
+        <div class="avatar__kid">
+          <img src="assets/img/girl-3.png" alt="niña pixelada" />
+        </div>
+      </div>
+
+      <div class="avatar__chat avatar__chat--right">
+        <div class="nes-balloon from-right avatar__balloon">
+          <p>
+            Úsalo en tu cuenta de Discord para interactuar con todos y todas las
+            participantes.
+          </p>
+        </div>
+        <div class="avatar__kid">
+          <img src="assets/img/boy-1.png" alt="niño pixelado" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="avatar__second-section">
+    <div class="avatar__profile">
+      <div
+        #screen
+        class="avatar__bg-image"
+        [ngStyle]="{
+          'background-image': 'url(/assets/img/' + bgImage + ')'
+        }"
+      >
+        <div [innerHTML]="buildAvatarSvg() | sanitizeHtml"></div>
+      </div>
+      <div class="avatar__download-container">
+        <div
+          class="avatar__arrow avatar__arrow--flip"
+          (click)="previousBgImage()"
+        >
+          <img src="assets/img/title-arrow.png" alt="arrow" />
+        </div>
+        <button
+          type="button"
+          class="avatar__download-button"
+          (click)="downloadImage()"
+        >
+          Descargar avatar
+        </button>
+        <div class="avatar__arrow" (click)="nextBgImage()">
+          <img src="assets/img/title-arrow.png" alt="arrow" />
+        </div>
+      </div>
+    </div>
+    <div class="avatar__items">
+      <div *ngFor="let key of avatarKeys">
+        <wgj-attribute-selector
+          [dialogId]="key"
+          [avatar]="avatar"
+          [decorator]="getAvatarDecoratorItem(key)"
+        ></wgj-attribute-selector>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div hidden>
+  <img #canvas />
+  <a #downloadLink>Descarga</a>
+</div>

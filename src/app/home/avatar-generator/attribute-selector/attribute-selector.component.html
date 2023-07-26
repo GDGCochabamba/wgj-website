@@ -1,0 +1,56 @@
+<div class="nes-container with-title is-rounded selector__card">
+  <p class="title">{{ decorator.name }}</p>
+  <div [innerHTML]="getIcon() | sanitizeHtml" (click)="openDialog()"></div>
+</div>
+
+<dialog
+  class="modal nes-dialog is-rounded selector__dialog"
+  [id]="'dialog-default-' + decorator.name"
+>
+  <ng-container *ngIf="decorator">
+    <button
+      type="button"
+      class="nes-btn is-error selector__close-btn"
+      (click)="closeDialog()"
+    >
+      X
+    </button>
+    <form method="dialog">
+      <p class="selector__title">
+        Selecciona un tipo de {{ decorator.name }}
+      </p>
+      <div class="selector__container">
+        <div class="selector__profile">
+          <div [innerHTML]="getAvatar() | sanitizeHtml"></div>
+        </div>
+        <div class="selector__profile">
+          <div *ngIf="hasColor" class="selector__color">
+            <label class="selector__description" for="favColor">
+              Puedes cambiar el color 🎨 aquí:
+            </label>
+            <input
+              id="favColor"
+              type="color"
+              name="favcolor"
+              [(ngModel)]="color"
+            />
+          </div>
+          <div class="selector__items">
+            <div *ngFor="let item of decorator.options">
+              <div class="selector__card">
+                <div
+                  class="nes-container is-rounded"
+                  (click)="selectItem(item)"
+                  [ngClass]="{
+                    'selector__selected': item === decorator.currentValue
+                  }"
+                  [innerHTML]="getPreviewItem(item) | sanitizeHtml"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+</dialog>

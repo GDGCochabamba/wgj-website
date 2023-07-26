@@ -1,0 +1,51 @@
+.selector__card {
+  height: 120px;
+  width: 120px;
+}
+
+.selector__dialog {
+  .selector__close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .selector__title {
+    font-size: 1.7rem;
+  }
+
+  .selector__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    .selector__profile {
+      flex: 1;
+
+      .selector__description {
+        color: #653780;
+      }
+
+      .selector__items {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        gap: 12px;
+        justify-content: center;
+
+        .selector__selected {
+          background-color: #653780;
+        }
+      }
+
+      .selector__color {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

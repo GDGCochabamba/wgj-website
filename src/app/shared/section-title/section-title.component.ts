@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   selector: 'wgj-section-title',
   templateUrl: './section-title.component.html',
   styleUrls: ['./section-title.component.scss'],
-  imports: [CommonModule]
+  imports: [CommonModule],
 })
 export class SectionTitleComponent {
   @Input() isOrange = false;
