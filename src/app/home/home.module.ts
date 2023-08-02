@@ -16,6 +16,7 @@ import { AvatarGeneratorComponent } from './avatar-generator/avatar-generator.co
 import { AttributeSelectorComponent } from './avatar-generator/attribute-selector/attribute-selector.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SanitizeHtmlPipe } from './sanitizeHtml.pipe';
+import { FriendlyCommunitiesComponent } from './friendly-communities/friendly-communities.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SanitizeHtmlPipe } from './sanitizeHtml.pipe';
     CommunitiesComponent,
     InfoComponent,
     FaqComponent,
+    FriendlyCommunitiesComponent,
     VideosComponent,
     TrainerPostulationComponent,
     SponsorRegistrationComponent,
