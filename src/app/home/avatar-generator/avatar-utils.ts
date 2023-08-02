@@ -164,6 +164,7 @@ const optionEarrings = [
   'scesi',
   'makerHouse',
   'adaData',
+  'mujeresTics',
   'none',
 ];
 const optionsBody = [
