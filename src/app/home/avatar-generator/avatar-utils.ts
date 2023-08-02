@@ -156,12 +156,15 @@ const optionEarrings = [
   'cumbia',
   'bear',
   'bat',
-  'scesi',
+  'wtm',
   'angular',
   'gdg',
-  'wtm',
-  'makerHouse',
   'gp4',
+  'techkids',
+  'scesi',
+  'makerHouse',
+  'adaData',
+  'mujeresTics',
   'none',
 ];
 const optionsBody = [
