@@ -1,15 +1,15 @@
 export type KeyAvatar =
   | 'hair'
-  | 'clothes'
+  // | 'clothes'
   | 'mouth'
-  | 'earrings'
+  // | 'earrings'
   | 'eyebrows'
   | 'eyes'
   | 'glasses'
   | 'body'
   | 'hat'
-  | 'beard'
-  | 'nutria';
+  | 'beard';
+// | 'nutria';
 
 export type AvatarDecoratorItem = {
   options: string[];

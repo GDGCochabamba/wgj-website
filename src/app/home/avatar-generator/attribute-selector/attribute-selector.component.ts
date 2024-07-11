@@ -54,9 +54,8 @@ export class AttributeSelectorComponent implements OnInit {
     let image = '';
     if (this.decorator) {
       const { type } = this.decorator;
-      image = `<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" shape-rendering="crispEdges" fill="none">
-      ${getPreview(type, value, this.color)}
+      image = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 762" fill="none" shape-rendering="auto"><metadata xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"><rdf:rdf><rdf:description><dc:title>Adventurer</dc:title><dc:creator>Lisa Wischofsky</dc:creator><dc:source xsi:type="dcterms:URI">https://www.figma.com/community/file/1184595184137881796</dc:source><dcterms:license xsi:type="dcterms:URI">https://creativecommons.org/licenses/by/4.0/</dcterms:license><dc:rights>Remix of „Adventurer” (https://www.figma.com/community/file/1184595184137881796) by „Lisa Wischofsky”, licensed under „CC BY 4.0” (https://creativecommons.org/licenses/by/4.0/)</dc:rights></rdf:description></rdf:rdf></metadata><mask id="viewboxMask"><rect width="762" height="762" rx="0" ry="0" x="0" y="0" fill="#fff"></rect></mask>
+        ${getPreview(type, value, this.color)}
       </svg>`;
     }
     return image;
@@ -72,8 +71,7 @@ export class AttributeSelectorComponent implements OnInit {
     let image = '';
     if (this.decorator) {
       const { type, options } = this.decorator;
-      image = `<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" shape-rendering="crispEdges" fill="none">
+      image = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 762" fill="none" shape-rendering="auto"><metadata xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"><rdf:rdf><rdf:description><dc:title>Adventurer</dc:title><dc:creator>Lisa Wischofsky</dc:creator><dc:source xsi:type="dcterms:URI">https://www.figma.com/community/file/1184595184137881796</dc:source><dcterms:license xsi:type="dcterms:URI">https://creativecommons.org/licenses/by/4.0/</dcterms:license><dc:rights>Remix of „Adventurer” (https://www.figma.com/community/file/1184595184137881796) by „Lisa Wischofsky”, licensed under „CC BY 4.0” (https://creativecommons.org/licenses/by/4.0/)</dc:rights></rdf:description></rdf:rdf></metadata><mask id="viewboxMask"><rect width="762" height="762" rx="0" ry="0" x="0" y="0" fill="#fff"></rect></mask>
       ${getPreview(type, options[0], this.color)}
       </svg>`;
     }
