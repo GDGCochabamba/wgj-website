@@ -21,7 +21,7 @@ export class AvatarGeneratorComponent {
   @ViewChild('canvas') canvas!: ElementRef;
   @ViewChild('downloadLink') downloadLink!: ElementRef;
   avatar = avatarOptions;
-  bgImages = ['fondo1.png', 'fondo2.png', 'fondo3.png', 'fondo4.png'];
+  bgImages = ['fondo1.png', 'fondo2.png', 'fondo3.png'];
   bgImage = this.bgImages[0];
   avatarKeys = Object.keys(avatarOptions);
 
