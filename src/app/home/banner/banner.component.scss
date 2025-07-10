@@ -97,6 +97,62 @@
         top: 216px;
       }
     }
+
+    &.banner__cloud--3 {
+      left: 80px;
+      bottom: 102px;
+      width: 80px;
+
+      @media (min-width: 768px) {
+        left: 448px;
+        bottom: 316px;
+      }
+    }
+
+    &.banner__cloud--4 {
+      right: 20px;
+      top: 142px;
+      width: 60px;
+
+      @media (min-width: 768px) {
+        right: 448px;
+        top: 416px;
+      }
+    }
+
+    &.banner__cloud--5 {
+      right: 100px;
+      top: 700px;
+      width: 80px;
+
+      @media (min-width: 768px) {
+        right: 700px;
+        top: 100px;
+      }
+    }
+
+    &.banner__cloud--6 {
+      left: 20px;
+      top: 242px;
+      width: 200px;
+
+      @media (min-width: 768px) {
+        left: 500px;
+        top: 200px;
+      }
+    }
+
+    &.banner__cloud--7 {
+      right: 20px;
+      bottom: 200px;
+      width: 200px;
+      transform: rotateY(3.142rad);
+
+      @media (min-width: 768px) {
+        right: 300px;
+        bottom: 200px;
+      }
+    }
   }
 
   .banner__girls-img {
