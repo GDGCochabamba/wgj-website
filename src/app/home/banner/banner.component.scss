@@ -1,6 +1,6 @@
 .banner {
   height: 100vh;
-  max-height: 862px;
+  max-height: 1000px;
   min-height: 700px;
   position: relative;
 
@@ -76,6 +76,7 @@
 
   .banner__cloud {
     position: absolute;
+    width: 260px;
 
     &.banner__cloud--1 {
       left: 28px;
@@ -100,8 +101,11 @@
 
   .banner__girls-img {
     bottom: 0;
-    left: 0;
+    left: 50%;
+    max-width: 100%;
     position: absolute;
+    transform: translateX(-50%);
+    width: 1140px;
   }
 
   img {
