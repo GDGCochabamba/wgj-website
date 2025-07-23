@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    /* lila */
+    --color-primary: #231942; 
+    /* yellow */
+    --color-secondary: #FFBE0D;
+    /* pink ? */
+    --color-terciary: #C23E55;
+    /* lila 2 */
+    --color-quaternary: #2E1F43;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+  }
