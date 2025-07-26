@@ -6,5 +6,11 @@
       "organizers": "Organizadores",
       "sponsors": "Sponsors",
       "register": "Registrarme"
+    },
+    "videos": {
+      "title" : "Algunos videos"
+    },
+    "footer": {
+      "title" : "Comunidades Amigas"
     }
   }

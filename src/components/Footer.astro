@@ -1,0 +1,27 @@
+---
+import CloudStart from '../assets/cloud-start.svg';
+import GdgLogo from '../assets/gdg-logo.svg';
+import WtmLogo from '../assets/wtm-logo.svg';
+import Gp4techLogo from '../assets/gp4tech-logo.svg';
+import MqiLogo from '../assets/mqi-logo.svg';
+import es from '../locale/es.json';
+import en from '../locale/en.json';
+
+export interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang }: Props = Astro.props;
+const t = lang === 'es' ? es.footer : en.footer;
+---
+<CloudStart viewBox="0 0 1441.631 72.493" class="w-full h-auto opacity-100"/>
+<div class="bg-cloud w-full flex flex-col pt-16 gap-16">
+  <p class="font-bold text-[48px] leading-[100%] text-center text-yellow-title font-display-title text-border">{t.title}</p> 
+  <div class="flex flex-row justify-center gap-x-8 pb-16">
+    <GdgLogo class="w-auto" />
+    <WtmLogo class="w-auto" />
+    <Gp4techLogo class="w-auto" />
+    <MqiLogo class="w-auto"/>
+  </div>
+</div>
+
