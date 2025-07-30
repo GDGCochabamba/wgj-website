@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&display=swap');
 @import "tailwindcss";
 
 @theme {
+   --font-display-title: 'Grandstander', sans-serif;
     /* lila */
     --color-primary: #231942; 
     /* yellow */
@@ -11,4 +13,13 @@
     --color-quaternary: #2E1F43;
     --color-white: #FFFFFF;
     --color-black: #000000;
-  }
+    
+    --color-cloud: #FEEDD9;
+
+    --color-yellow-title: #FFDB39;
+}
+
+.text-border {
+  -webkit-text-stroke: 2px rgba(52, 24, 42, 1);
+}
+

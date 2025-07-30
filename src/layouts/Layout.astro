@@ -1,18 +1,20 @@
 ---
 import "../styles/global.css";
+import Footer from '../components/Footer.astro';
 ---
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>WGJ - Bolivia</title>
 	</head>
 	<body class="bg-primary md:pt-20 pt-16">
 		<slot />
-	</body>
+	</body>	
+  	<Footer lang="es"/>
 </html>
 
 <style>
