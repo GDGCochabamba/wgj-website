@@ -12,16 +12,24 @@ export interface Props {
 
 const { lang }: Props = Astro.props;
 const t = lang === 'es' ? es.videos : en.videos;
-const videos = [
-  "https://www.youtube.com/embed/eXTlzyO9lUY",
-  "https://www.youtube.com/embed/rlyI_A4AP3E",
-  "https://www.youtube.com/embed/PbL_iJDv8zw"
-];
 ---
 <CloudStart viewBox="0 0 1441.631 72.493" class="w-full h-auto opacity-100 my-[-1px]"/>
-<div class="bg-cloud w-full h-[533.7195px] pt-16 pb-16">
+<div class="bg-cloud w-full h-[533.7195px] p-16 px-2">
   <p class="font-bold text-[48px] leading-[100%] text-center text-yellow-title font-display-title text-border">{t.title}</p> 
-  <VideoCarousel videos={videos} client:load />
+  <div class="flex flex-col sm:flex-row justify-center items-center">
+    <div class="p-4 flex-col md:flex-row">
+      <iframe class="h-[250px] w-[400px] md:h-[310px] md:w-[540px] lg:h-[340px] lg:w-[590px]"
+        src="https://www.youtube.com/embed/rlyI_A4AP3E"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="p-4 flex-col md:flex-row">
+      <iframe class="h-[250px] w-[400px] md:h-[310px] md:w-[540px] lg:h-[340px] lg:w-[590px]"
+          src="https://www.youtube.com/embed/eXTlzyO9lUY"
+          allowfullscreen
+        ></iframe>
+    </div>
+  </div>
 </div>    
 <CloudEnd viewBox="0 0 1441.631 72.493" class="w-full h-auto opacity-100 my-[-1px]"/>
 
