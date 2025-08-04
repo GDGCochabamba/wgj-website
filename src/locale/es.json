@@ -7,6 +7,14 @@
       "sponsors": "Sponsors",
       "register": "Registrarme"
     },
+    "info": {
+        "title": "¿Qué es el Women Game Jam?",
+        "description1": "Women Game Jam es un hackathon de videojuegos y juegos de mesa, donde podrás aprender, crear y conectar.",
+        "description2": "Se realiza de forma simultánea en varios países y promueve la diversidad y la inclusión en el desarrollo de juegos.",
+        "days":"Días",
+        "participants":"Participantes",
+        "countries":"Países"
+    },
     "videos": {
       "title" : "Algunos videos"
     },
