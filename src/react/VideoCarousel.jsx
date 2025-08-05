@@ -10,19 +10,20 @@ export default function VideoCarousel({ videos }) {
   return (
     <Swiper
       modules={[Navigation, Pagination]}
+      centerInsufficientSlides={true}
       breakpoints={{
         0: { slidesPerView: 1 },
         768: { slidesPerView: 2 },
-        1280: { slidesPerView: 3 },
+        1280: { slidesPerView: 2 },
       }}
       navigation
-      spaceBetween={4}
+      spaceBetween={32}
       pagination={{ clickable: true }}
     >
       {videos.map((url, index) => (
         <SwiperSlide key={index}>
           <iframe
-            className="px-8 py-8 h-[250px] w-[400px] md:h-[310px] md:w-[540px] lg:h-[340px] lg:w-[590px]"
+            className="mx-auto h-[250px] w-[400px] md:h-[250px] md:w-[400px] lg:h-[304px] lg:w-[539px]"
             src={url}
             allowFullScreen
           ></iframe>
