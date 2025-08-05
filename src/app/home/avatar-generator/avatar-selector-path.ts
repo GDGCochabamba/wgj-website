@@ -354,7 +354,9 @@ export function getEyes(type: string, color: string): string {
       `;
       break;
   }
-  return `<g xmlns="http://www.w3.org/2000/svg" transform="translate(-161 -83)"">${eyes}</g>`;
+  return `<g transform="translate(-161 -83)">
+      ${eyes}
+    </g>`;
 }
 
 export function getGlasses(type: string, color: string): string {
