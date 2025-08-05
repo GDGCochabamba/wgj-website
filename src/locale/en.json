@@ -6,7 +6,15 @@
       "organizers": "Organizers",
       "sponsors": "Sponsors",
       "register": "Register"
-    }, 
+    },
+    "register" : {
+      "title" : "Join the adventure",
+      "description1" : "Share, Design, Program.",
+      "description2" : "Live the Game Jam experience.",
+      "date" : "August 8 to 10",
+      "eventType" : "Online event",
+      "action" : "Register here"
+    },
     "info": {
       "title": "What is the Women Game Jam?",
       "description1": "Women Game Jam is a hackathon for video games and board games, where you can learn, create, and connect. \n\nIt takes place simultaneously in several countries and promotes diversity and inclusion in game development.",
