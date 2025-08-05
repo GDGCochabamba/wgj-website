@@ -28,5 +28,12 @@
     },
     "footer": {
       "title" : "Friendly Communities"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "firstQuestion": "Do I need to know how to code to participate?",
+      "firstAnswer": "It is not necessary to know how to code. The Hackathon not only focuses on developing video games, you can also create board games. The main thing is to learn and share.",
+      "secondQuestion": "Do I need to have a team?",
+      "secondAnswer": "No, if you want you can register by yourself and on the first day of the event we will help you find a team."
     }
   }

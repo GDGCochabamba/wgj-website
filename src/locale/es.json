@@ -28,5 +28,12 @@
     },
     "footer": {
       "title" : "Comunidades Amigas"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "firstQuestion": "Tengo que saber programar para participar?",
+      "firstAnswer": "No es necesario saber programar. El Hackathon no solo se\nenfoca en desarrollar videojuegos, también puedes crear\njuegos de mesa. Lo principal es aprender y compartir.",
+      "secondQuestion": "Necesito tener un equipo?",
+      "secondAnswer": "No, si quieres puedes inscribirte solamente tú y el primer\ndía del evento te ayudaremos a encontrar un equipo."
     }
   }

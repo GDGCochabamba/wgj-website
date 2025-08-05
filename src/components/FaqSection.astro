@@ -1,3 +1,15 @@
+---
+import es from '../locale/es.json';
+import en from '../locale/en.json';
+
+export interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang }: Props = Astro.props;
+const t = lang === 'es' ? es.faq : en.faq;
+---
+
 <section class="bg-[#1E1540] text-white py-16 px-6">
     <div class="bg-[#FEEDD9] rounded-[30px] p-6 md:p-10 max-w-7xl mx-auto">
         <!-- Título con imagen -->
@@ -5,7 +17,7 @@
             <h2
                 class="inset-0 flex items-center justify-center text-[#231942] font-bold text-[38px] text-center font-display-title"
             >
-                Preguntas Frecuentes
+              {t.title}
             </h2>
         </div>
 
@@ -18,12 +30,10 @@
             />
             <div>
                 <h3 class="text-xl font-bold text-[#231942]">
-                    Tengo que saber programar para participar?
+                  {t.firstQuestion}
                 </h3>
                 <p class="mt-2 text-[#231942]">
-                    No es necesario saber programar. El Hackathon no solo se
-                    enfoca en desarrollar videojuegos, también puedes crear
-                    juegos de mesa. Lo principal es aprender y compartir.
+                  {t.firstAnswer}
                 </p>
             </div>
         </div>
@@ -37,11 +47,10 @@
             />
             <div>
                 <h3 class="text-xl text-[#231942] font-bold">
-                    Necesito tener un equipo?
+                  {t.secondQuestion}
                 </h3>
                 <p class="mt-2 text-[#231942]">
-                    No, si quieres puedes inscribirte solamente tú y el primer
-                    día del evento te ayudaremos a encontrar un equipo.
+                  {t.secondAnswer}
                 </p>
             </div>
         </div>
