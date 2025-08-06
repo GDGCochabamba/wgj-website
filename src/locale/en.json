@@ -23,6 +23,9 @@
       "participants": "Participants",
       "countries": "Countries"
     },
+    "avatarGenerator": {
+      "title": "Generate your avatar"
+    },
     "videos": {
       "title" : "Some videos"
     },
