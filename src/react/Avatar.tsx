@@ -60,7 +60,7 @@ function Avatar() {
   return (
     <>
       <div className="flex flex-col items-center justify-center">
-        <div id="avatar" className={`flex flex-col items-center ml-8 justify-center ${background}`} >
+        <div id="avatar" className={`flex flex-col items-center justify-center ${background}`} >
           <svg width="400" height="400" viewBox="0 0 400 400" dangerouslySetInnerHTML={{ __html: buildAvatar(avatar) }}></svg>
         </div>
         <div className="flex flex-row mt-4 gap-2">
