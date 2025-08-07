@@ -60,16 +60,16 @@ function Avatar() {
   return (
     <>
       <div className="flex flex-col items-center justify-center">
-        <div id="avatar" className={`flex flex-col items-center justify-center ${background}`} >
+        <div id="avatar" className={`flex flex-col items-center ml-8 justify-center ${background}`} >
           <svg width="400" height="400" viewBox="0 0 400 400" dangerouslySetInnerHTML={{ __html: buildAvatar(avatar) }}></svg>
         </div>
-        <div className="flex flex-row">
-          <button onClick={() => setBackground(getPreviousBackground())} className="bg-yellow-title text-white px-4 py-2 rounded-md">{'<'}</button>
-          <button onClick={downloadAvatar} id="download-btn" className="bg-yellow-title text-white px-4 py-2 rounded-md">Download Avatar</button>
-          <button onClick={() => setBackground(getNextBackground())} className="bg-yellow-title text-white px-4 py-2 rounded-md">{'>'}</button>
+        <div className="flex flex-row mt-4 gap-2">
+          <button onClick={() => setBackground(getPreviousBackground())} className="bg-primary text-white px-4 py-2 rounded-md">{'<'}</button>
+          <button onClick={downloadAvatar} id="download-btn" className="bg-primary text-white px-4 py-2 rounded-md">Download Avatar</button>
+          <button onClick={() => setBackground(getNextBackground())} className="bg-primary text-white px-4 py-2 rounded-md">{'>'}</button>
         </div>
       </div>
-      <div className="flex flex-row flex-wrap gap-2">
+      <div className="flex flex-row flex-wrap gap-2 justify-center ml-8">
         {avatarKeys.map((key) => {
           return <div
             key={key}
@@ -85,7 +85,7 @@ function Avatar() {
         <form method="dialog">
           <div className="flex flex-row">
             <svg id="avatar" width="300" height="300" viewBox="0 0 300 300" dangerouslySetInnerHTML={{ __html: buildAvatar(avatar) }}></svg>
-            <div className="flex flex-row flex-wrap gap-2">
+            <div className="flex justify-center flex-row flex-wrap gap-2">
               {selectedAvatar?.options?.map((key) => {
                 return <div
                   key={key}
@@ -106,16 +106,21 @@ function Avatar() {
               })}
             </div>
           </div>
-          {selectedAvatar && <input type="color" value={selectedAvatar.color} onChange={(e) => {
-            setAvatar({
-              ...avatar,
-              [selectedAvatar.type]: {
-                ...avatar[selectedAvatar.type],
-                color: e.target.value
-              }
-            })
-          }} />}
-          <button onClick={close} id="close-dialog">Close dialog</button>
+          {selectedAvatar && <>
+            <div className="flex flex-row mt-4 gap-2">
+            <p>selecciona el color</p>
+            <input type="color" value={selectedAvatar.color} onChange={(e) => {
+              setAvatar({
+                ...avatar,
+                [selectedAvatar.type]: {
+                  ...avatar[selectedAvatar.type],
+                  color: e.target.value
+                }
+              })
+            }} />
+            </div>
+          </>}
+          <button className="absolute top-0 right-2 text-white text-2xl font-bold bg-primary rounded-full w-8 h-8 flex items-center justify-center" onClick={close} id="close-dialog">X</button>
         </form>
       </dialog>
     </>
