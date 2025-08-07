@@ -23,6 +23,35 @@
     --color-yellow-title: #FFDB39;
 }
 
+.background-avatar1 {
+  background-image: url('../assets/fondo1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-avatar2 {
+  background-image: url('../assets/fondo2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-avatar3 {
+  background-image: url('../assets/fondo3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+:modal {
+  background-color: var(--color-cloud);
+  border: 2px solid var(--color-yellow-title);
+  border-radius: 5px;
+  padding: 10px;
+  position-area: bottom;
+}
+
 .text-border {
   -webkit-text-stroke: 2px rgba(52, 24, 42, 1);
 }
