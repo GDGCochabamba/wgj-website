@@ -17,7 +17,7 @@ export interface Props {
 const { lang }: Props = Astro.props;
 const t = lang === "es" ? es.register : en.register;
 ---
-<section class="bg-primary py-16">
+<section class="bg-primary py-16" id="hero">
   <div class="w-full flex flex-col items-end">
     <StartRight  class="my-[-1px] mr-35"/>
     <CloudRight  class="opacity-100 my-[-1px]"/>

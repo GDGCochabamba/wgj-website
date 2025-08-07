@@ -15,7 +15,7 @@ const { lang }: Props = Astro.props;
 const t = lang === 'es' ? es.footer : en.footer;
 ---
 <CloudStart viewBox="0 0 1441.631 72.493" class="w-full h-auto opacity-100 my-[-1px]"/>
-<div class="bg-cloud w-full flex flex-col pt-16 gap-16">
+<div class="bg-cloud w-full flex flex-col pt-16 gap-16" id="sponsors">
   <p class="font-bold text-[48px] leading-[100%] text-center text-yellow-title font-display-title text-border">{t.title}</p> 
   <div class="flex flex-row justify-center gap-x-8 pb-16">
     <GdgLogo class="w-auto" />
