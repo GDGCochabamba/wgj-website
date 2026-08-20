@@ -1,0 +1,42 @@
+{
+    "header": {
+      "home": "Home",
+      "about": "What is Women Game Jam?",
+      "participants": "Who can participate?",
+      "organizers": "Organizers",
+      "sponsors": "Sponsors",
+      "register": "Register"
+    },
+    "register" : {
+      "title" : "Join the adventure",
+      "description1" : "Share, Design, Program.",
+      "description2" : "Live the Game Jam experience.",
+      "date" : "August 8 to 10",
+      "eventType" : "Online event",
+      "action" : "Souvenirs"
+    },
+    "info": {
+      "title": "What is the Women Game Jam?",
+      "description1": "Women Game Jam is a hackathon for video games and board games, where you can learn, create, and connect. \n\nIt takes place simultaneously in several countries and promotes diversity and inclusion in game development.",
+      "description2": "It takes place simultaneously in several countries and promotes diversity and inclusion in game development.",
+      "days": "Days",
+      "participants": "Participants",
+      "countries": "Countries"
+    },
+    "avatarGenerator": {
+      "title": "Generate your avatar"
+    },
+    "videos": {
+      "title" : "Some videos"
+    },
+    "footer": {
+      "title" : "Friendly Communities"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "firstQuestion": "Do I need to know how to code to participate?",
+      "firstAnswer": "It is not necessary to know how to code. The Hackathon not only focuses on developing video games, you can also create board games. The main thing is to learn and share.",
+      "secondQuestion": "Do I need to have a team?",
+      "secondAnswer": "No, if you want you can register by yourself and on the first day of the event we will help you find a team."
+    }
+  }

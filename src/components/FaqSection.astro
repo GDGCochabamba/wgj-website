@@ -1,0 +1,58 @@
+---
+import es from '../locale/es.json';
+import en from '../locale/en.json';
+
+export interface Props {
+  lang: 'es' | 'en';
+}
+
+const { lang }: Props = Astro.props;
+const t = lang === 'es' ? es.faq : en.faq;
+---
+
+<section class="bg-[#1E1540] text-white py-16 px-6">
+    <div class="bg-[#FEEDD9] rounded-[30px] p-6 md:p-10 max-w-7xl mx-auto">
+        <!-- Título con imagen -->
+        <div class="relative w-fit mb-4">
+            <h2
+                class="inset-0 flex items-center justify-center text-[#231942] font-bold text-[38px] text-center font-display-title"
+            >
+              {t.title}
+            </h2>
+        </div>
+
+        <!-- Pregunta 1 -->
+        <div class="mb-8 flex items-start gap-4">
+            <img
+                src="/src/assets/estrellaamarilla.svg"
+                class="w-[40px] md:w-[45px]  mr-2"
+                alt="Icono decorativo de estrella"
+            />
+            <div>
+                <h3 class="text-xl font-bold text-[#231942]">
+                  {t.firstQuestion}
+                </h3>
+                <p class="mt-2 text-[#231942]">
+                  {t.firstAnswer}
+                </p>
+            </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="mb-8 flex items-start gap-4">
+            <img
+                src="/src/assets/estrellaamarilla.svg"
+                class="w-[40px] md:w-[45px] mr-2"
+                alt="Icono decorativo de estrella"
+            />
+            <div>
+                <h3 class="text-xl text-[#231942] font-bold">
+                  {t.secondQuestion}
+                </h3>
+                <p class="mt-2 text-[#231942]">
+                  {t.secondAnswer}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

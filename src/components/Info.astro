@@ -1,0 +1,80 @@
+---
+import CloudStart from "../assets/cloud-start.svg";
+import CloudEnd from "../assets/cloud-end.svg";
+import Star from "../assets/star.svg";
+
+import es from "../locale/es.json";
+import en from "../locale/en.json";
+
+export interface Props {
+  lang: "es" | "en";
+}
+
+const { lang }: Props = Astro.props;
+const t = lang === "es" ? es.info : en.info;
+---
+
+<CloudStart
+  viewBox="0 0 1441.631 72.493"
+  class="w-full h-auto opacity-100 my-[-1px]"
+/>
+<section class="bg-cloud text-center py-16 px-4" id="about">
+  <div class="max-w-4xl mx-auto">
+    <h2
+      class="font-bold text-[48px] leading-[100%] text-center text-yellow-title font-display-title text-border"
+    >
+      {t.title}
+    </h2>
+    <br />
+    <p
+      class="text-[24px] leading-[120%] text-primary font-semibold text-center font-display-text max-w-[820px] max-h-[145px] mb-2"
+    >
+      {t.description1}
+    </p>
+    <br />
+    <p
+      class="text-[24px] leading-[120%] text-primary font-semibold text-center font-display-text max-w-[820px] max-h-[145px] mb-2"
+    >
+      {t.description2}
+    </p>
+    <br />
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-10">
+      <!-- Star 1 -->
+      <div class="relative">
+        <Star class="w-[148px] rotate-[8.9deg]" />
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-black font-extrabold text-[64px] font-display-title leading-[50%] top-[20px] left-[5px]"
+        >
+          3
+          <span class="text-sm font-medium mt-1">{t.days}</span>
+        </div>
+      </div>
+
+      <!-- Star 2 -->
+      <div class="relative">
+        <Star class="w-[196px]" />
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-black font-extrabold text-[64px] font-display-title leading-[50%] top-[15px] left-[15px]"
+        >
+          100
+          <span class="text-sm font-medium mt-1">{t.participants}</span>
+        </div>
+      </div>
+
+      <!-- Star 3 -->
+      <div class="relative">
+        <Star class="w-[165px] rotate-[14deg]" />
+        <div
+          class="absolute inset-0 flex flex-col items-center justify-center text-black font-extrabold text-[64px] font-display-title leading-[50%] top-[20px] left-[5px]"
+        >
+          20
+          <span class="text-sm font-medium mt-1">{t.countries}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<CloudEnd
+  viewBox="0 0 1441.631 72.493"
+  class="w-full h-auto opacity-100 my-[-1px]"
+/>
