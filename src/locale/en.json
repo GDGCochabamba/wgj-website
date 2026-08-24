@@ -2,10 +2,10 @@
     "header": {
       "home": "Home",
       "about": "What is Women Game Jam?",
-      "participants": "Who can participate?",
-      "organizers": "Organizers",
-      "sponsors": "Sponsors",
-      "register": "Register"
+      "avatarGenerator": "Generate your avatar",
+      "videos": "Some videos",
+      "faq": "Frequently Asked Questions",
+      "footer": "Friendly Communities"
     },
     "register" : {
       "title" : "Join the adventure",
