@@ -54,3 +54,5 @@ firebase-debug.log
 
 # Scully
 scully.log
+
+package-lock.json
