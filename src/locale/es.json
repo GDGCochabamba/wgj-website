@@ -5,13 +5,16 @@
       "avatarGenerator": "Genera tu avatar",
       "videos": "Algunos videos",
       "faq": "Preguntas Frecuentes",
-      "footer": "Comunidades Amigas"
+      "footer": "Comunidades Amigas",
+      "sponsors": "to do",
+      "participants": "to do",
+      "organizers": "to do"
     },
     "register" : {
       "title" : "Únete a la aventura",
       "description1" : "Comparte, Diseña, Programa.",
       "description2" : "Vive la experiencia de la Game Jam.",
-      "date" : "8 al 10 Agosto",
+      "date" : "16 al 18 de octubre",
       "eventType" : "Evento Online",
       "action" : "Souvenirs"
     },

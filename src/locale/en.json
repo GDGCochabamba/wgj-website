@@ -5,13 +5,16 @@
       "avatarGenerator": "Generate your avatar",
       "videos": "Some videos",
       "faq": "Frequently Asked Questions",
-      "footer": "Friendly Communities"
+      "footer": "Friendly Communities",
+      "sponsors": "to do",
+      "participants": "to do",
+      "organizers": "to do"
     },
     "register" : {
       "title" : "Join the adventure",
       "description1" : "Share, Design, Program.",
       "description2" : "Live the Game Jam experience.",
-      "date" : "August 8 to 10",
+      "date" : "October 16 to 18",
       "eventType" : "Online event",
       "action" : "Souvenirs"
     },
