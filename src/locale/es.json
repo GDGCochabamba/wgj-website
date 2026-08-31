@@ -16,7 +16,8 @@
       "description2" : "Vive la experiencia de la Game Jam.",
       "date" : "16 al 18 de octubre",
       "eventType" : "Evento Online",
-      "action" : "Souvenirs"
+      "action" : "Registro",
+      "action_2" : "Página Global"
     },
     "info": {
         "title": "¿Qué es el Women Game Jam?",
