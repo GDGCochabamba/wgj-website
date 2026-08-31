@@ -1,0 +1,37 @@
+---
+import CloudStart from '../assets/cloud-start.svg';
+import CloudEnd from '../assets/cloud-end.svg';
+import es from '../locale/es.json';
+import en from '../locale/en.json';
+
+import VideoCarousel from '../react/VideoCarousel.jsx';
+import YearSwiper from '../react/YearSwiper.jsx';
+import Dropdown from '../react/Dropdown';
+
+export interface Props {  
+  lang: 'es' | 'en';
+  videosUrls: string[];
+}
+
+const { lang, videosUrls }: Props = Astro.props;
+const t = lang === 'es' ? es.videos : en.videos;
+
+---
+<CloudStart viewBox="0 0 1441.631 72.493" class="w-full h-auto opacity-100 my-[-1px]"/>
+
+<div class="bg-cloud w-full h-[533.7195px] p-16 px-2" id="videos">
+    <div class="relative">
+  <p class="font-bold text-[48px] leading-[100%] text-center text-yellow-title font-display-title text-border pb-10">
+    {t.title}
+  </p>
+
+  <div class="absolute top-1/2 right-0 -translate-y-1/2">
+    <YearSwiper years={[2020, 2021, 2024]} client:load />
+  </div>
+</div>
+        
+    
+    <VideoCarousel videos={videosUrls} client:load />
+</div>
+<CloudEnd viewBox="0 0 1441.631 72.493" class="w-full h-auto opacity-100 my-[-1px]"/>
+
