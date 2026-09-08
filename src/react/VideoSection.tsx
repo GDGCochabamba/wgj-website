@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import YearSwiper2 from "./YearSwiper2";
-import VideoCarousel2 from "./VideoCarousel";
+import YearSwiper from "./YearSwiper";
+import VideoCarousel from "./VideoCarousel";
 import type Swiper from "swiper";
 import type { SwiperClass } from "swiper/react";
 
@@ -60,16 +60,16 @@ function VideoSection({ videosByYear } : VideoSectionProps) {
   return (
     <>
     <div className="absolute  right-0 md:-translate-y-[100%] sm:-translate-y-[80%] max-[363px]:-translate-y-[100%] min-[364px]:-translate-y-[80%]  mb-4 md:mb-0">
-    <YearSwiper2 years={years}
+    <YearSwiper years={years}
      onSwiperInit = {(swiper) => (yearSwiperRef.current = swiper)}
      onSlideChange = {handleYearSlideChange}
      />
     
     </div>
     <div>
-    <VideoCarousel2 flatVideos={flatVideos} 
+    <VideoCarousel flatVideos={flatVideos} 
       onSwiperInit={(swiper) => (videoSwiperRef.current = swiper)}
-      onSlideChange={handleVideoSlideChange}></VideoCarousel2>
+      onSlideChange={handleVideoSlideChange}></VideoCarousel>
     </div>
     </>
   );
