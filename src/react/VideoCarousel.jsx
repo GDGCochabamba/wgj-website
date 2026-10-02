@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 export default function VideoCarousel({ videos }) {
   return (
     <Swiper
+      className="[&_.swiper-pagination]:!static"
       modules={[Navigation, Pagination]}
       centerInsufficientSlides={true}
       breakpoints={{
